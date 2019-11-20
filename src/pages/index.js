@@ -25,8 +25,6 @@ class HomeIndex extends React.Component {
                 >
                 </Helmet>
 
-                <Banner />
-
                 <div id="main">
                     <section id="one" className="tiles">
                         <article style={{backgroundImage: `url(${pic01})`}}>
