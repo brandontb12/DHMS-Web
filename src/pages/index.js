@@ -11,6 +11,8 @@ import pic03 from '../assets/images/pic03.jpg'
 import pic04 from '../assets/images/pic04.jpg'
 import pic05 from '../assets/images/pic05.jpg'
 import pic06 from '../assets/images/pic06.jpg'
+import contractPic from '../assets/images/contract.jpg'
+import flagPic from '../assets/images/DHMSFlag.jpg'
 
 class HomeIndex extends React.Component {
     render() {
@@ -28,7 +30,7 @@ class HomeIndex extends React.Component {
 
                 <div id="main">
                     <section id="one" className="tiles">
-                        <article style={{backgroundImage: `url(${pic01})`}}>
+                        <article style={{backgroundImage: `url(${flagPic})`}}>
                             <header className="major">
                                 <h3>Defence Healthcare Management Systems</h3>
                                 <br/>
@@ -36,9 +38,9 @@ class HomeIndex extends React.Component {
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
-                        <article style={{backgroundImage: `url(${pic02})`}}>
+                        <article style={{backgroundImage: `url(${contractPic})`}}>
                             <header className="major">
-                                <h3>CONTRACT. WITH. US.</h3>
+                                <h3 className="contract-header" >CONTRACT. WITH. US.</h3>
                                 <div className="contract-link">
                                     <Link className="button contract" to="/">Organizations</Link>
                                     <Link className="button contract" to="/">Opportunities</Link>

@@ -44,7 +44,7 @@
 				margin-top: 5rem;
 				position: relative;
 				z-index: 3;
-				transform: translateY(20%);
+				transform: translateY(5vh);
 				transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1),background 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 			}
 
@@ -52,8 +52,15 @@
 				visibility: hidden;
 			}
 
+			.contract-header {
+				word-spacing: 3rem;
+				margin-bottom: 5vh;
+				font-size: 7vh;
+			}
+
 			h3 {
 				font-size: 1.4em;
+				text-align: center;
 				a {
 					&:hover {
 						color: inherit !important;
@@ -110,7 +117,7 @@
 					opacity: 0.5;
 				}
 				header {
-					transform: translateY(-20%);
+					transform: translateY(-5vh);
 					transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1),background 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 				}
 				h2 {
