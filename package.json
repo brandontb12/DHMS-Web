@@ -32,4 +32,5 @@
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   }
+  "main": "src/pages/index.js"
 }
