@@ -31,6 +31,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default.git"
-  },
-  "main": "src/pages/index.js"
+  }
 }
