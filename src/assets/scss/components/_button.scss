@@ -123,6 +123,14 @@
 			}
 		}
 
+		&.contract {
+			margin: 2rem;
+			font-size: .82rem;
+			width: 16rem;
+			height: 5rem;
+			line-height: 5rem;
+		}
+
 		&.disabled,
 		&:disabled {
 			@include vendor('pointer-events', 'none');

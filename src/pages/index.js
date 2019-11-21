@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from 'reactstrap'
 import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
@@ -29,23 +30,24 @@ class HomeIndex extends React.Component {
                     <section id="one" className="tiles">
                         <article style={{backgroundImage: `url(${pic01})`}}>
                             <header className="major">
-                                <h3>Aliquam</h3>
-                                <p>Ipsum dolor sit amet</p>
+                                <h3>Defence Healthcare Management Systems</h3>
                                 <br/>
-                                <h2>Hidden Content 1</h2>
-                                <br/>
-                                <h2>Hidden Content 2</h2>
-                                <br/>
-                                <h2>Hidden Content 3</h2>
+                                <h2>The Program Executive Office, Defense Healthcare Management Systems (PEO DHMS) was chartered to transform the delivery of healthcare and advance data sharing for service members, veterans, and their families.</h2>
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic02})`}}>
                             <header className="major">
-                                <h3>Tempus</h3>
-                                <p>feugiat amet tempus</p>
+                                <h3>CONTRACT. WITH. US.</h3>
+                                <div className="contract-link">
+                                    <Link className="button contract" to="/">Organizations</Link>
+                                    <Link className="button contract" to="/">Opportunities</Link>
+                                    <Link className="button contract" to="/">Conferences</Link>
+                                    <Link className="button contract" to="/">Training and Workshops</Link>
+                                    <Link className="button contract" to="/">Publications</Link>
+                                    <Link className="button contract" to="/">Blog</Link>
+                                </div>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic03})`}}>
                             <header className="major">

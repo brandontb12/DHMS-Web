@@ -41,13 +41,19 @@
 			}
 
 			header {
-				margin-top: 15rem;
+				margin-top: 5rem;
 				position: relative;
 				z-index: 3;
+				transform: translateY(20%);
+				transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1),background 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+			}
+
+			.contract-link {
+				visibility: hidden;
 			}
 
 			h3 {
-				font-size: 1.75em;
+				font-size: 1.4em;
 				a {
 					&:hover {
 						color: inherit !important;
@@ -57,7 +63,7 @@
 
 			h2 {
 				visibility: hidden;
-				font-size: 1.7em;
+				font-size: 1em;
 				font-weight: _font(weight-bold);
 				letter-spacing: _font(letter-spacing-alt);
 				margin-bottom: 0;
@@ -104,10 +110,13 @@
 					opacity: 0.5;
 				}
 				header {
-					transform: translateY(-30%);
+					transform: translateY(-20%);
 					transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1),background 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 				}
 				h2 {
+					visibility: visible;
+				}
+				.contract-link {
 					visibility: visible;
 				}
 			}
