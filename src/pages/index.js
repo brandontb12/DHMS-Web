@@ -47,7 +47,7 @@ class HomeIndex extends React.Component {
                                     <Link className="button contract" to="/">Conferences</Link>
                                     <Link className="button contract" to="/">Training and Workshops</Link>
                                     <Link className="button contract" to="/">Publications</Link>
-                                    <Link className="button contract" to="/">Blog</Link>
+                                    <Link className="button contract" to="/blog_landing">Blog</Link>
                                 </div>
                             </header>
                         </article>
