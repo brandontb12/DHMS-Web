@@ -5,14 +5,14 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 //import Banner from '../components/Banner'
 
-//import pic01 from '../assets/images/pic01.jpg'
-//import pic02 from '../assets/images/pic02.jpg'
 import pic03 from '../assets/images/pic03.jpg'
 import pic04 from '../assets/images/pic04.jpg'
 import pic05 from '../assets/images/pic05.jpg'
 import pic06 from '../assets/images/pic06.jpg'
 import contractPic from '../assets/images/contract.jpg'
 import flagPic from '../assets/images/DHMSFlag.jpg'
+import overviewPic from '../assets/images/overview.jpg'
+import blogPic from '../assets/images/blog.jpg'
 
 class HomeIndex extends React.Component {
     render() {
@@ -32,7 +32,7 @@ class HomeIndex extends React.Component {
                     <section id="one" className="tiles">
                         <article style={{backgroundImage: `url(${flagPic})`}}>
                             <header className="major">
-                                <h3>Defence Healthcare Management Systems</h3>
+                                <h3>Defense Healthcare Management Systems</h3>
                                 <br/>
                                 <h2>The Program Executive Office, Defense Healthcare Management Systems (PEO DHMS) was chartered to transform the delivery of healthcare and advance data sharing for service members, veterans, and their families.</h2>
                             </header>
@@ -51,31 +51,35 @@ class HomeIndex extends React.Component {
                                 </div>
                             </header>
                         </article>
-                        <article style={{backgroundImage: `url(${pic03})`}}>
+                        <article style={{backgroundImage: `url(${overviewPic})`}}>
                             <header className="major">
-                                <h3>Magna</h3>
-                                <p>Lorem etiam nullam</p>
+                                <h3 className="contract-header">Program Overview</h3>
+                                <h2>PEO DHMS is an acquisition organization with a direct reporting relationship to the Office of the Under Secretary of Defense for Acquisition and Sustainment (OUSD(A&S)), and administratively attached to the Defense Health Agency.</h2>
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
-                        <article style={{backgroundImage: `url(${pic04})`}}>
+                        <article style={{backgroundImage: `url(${blogPic})`}}>
                             <header className="major">
-                                <h3>Ipsum</h3>
-                                <p>Nisl sed aliquam</p>
+                                <h3 className="contract-header">Blogs</h3>
+                                <h2 className="blog-info">Visit our blog page for all up to date news regarding DHMS</h2>
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic05})`}}>
                             <header className="major">
-                                <h3>Consequat</h3>
-                                <p>Ipsum dolor sit amet</p>
+                                <h3>DoD/VA Interagency Program Office (IPO)</h3>
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic06})`}}>
                             <header className="major">
-                                <h3>Etiam</h3>
-                                <p>Feugiat amet tempus</p>
+                                <h3>DoD Healthcare Management System Modernization (DHMSM)</h3>
+                            </header>
+                            <Link to="/landing" className="link primary"></Link>
+                        </article>
+                        <article style={{backgroundImage: `url(${pic05})`}}>
+                            <header className="major">
+                                <h3>Joint Operational Medicine Information Systems (JOMIS)</h3>
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
