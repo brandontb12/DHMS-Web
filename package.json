@@ -20,11 +20,13 @@
   ],
   "license": "MIT",
   "scripts": {
+    "clean": "rimraf .cache public",
+    "start": "npm run develop",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "federalist": "gatsby build -- --prefix-paths"
+    "federalist": "npm run build"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
