@@ -13,6 +13,7 @@ import contractPic from '../assets/images/contract.jpg'
 import flagPic from '../assets/images/DHMSFlag.jpg'
 import overviewPic from '../assets/images/overview.jpg'
 import blogPic from '../assets/images/blog.jpg'
+import ipopic from '../assets/images/dodva.jpg'
 
 class HomeIndex extends React.Component {
     render() {
@@ -65,21 +66,24 @@ class HomeIndex extends React.Component {
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
-                        <article style={{backgroundImage: `url(${pic05})`}}>
+                        <article style={{backgroundImage: `url(${ipopic})`}}>
                             <header className="major">
-                                <h3>DoD/VA Interagency Program Office (IPO)</h3>
+                                <h3 style={{marginBottom : '7vh'}}>DoD/VA Interagency Program Office (IPO)</h3>
+                                <h2 className="three-article-h2">Leads the DoD and Veterans Affairs' (VA) efforts to implement national health data standards to ensure interoperability among the DoD, VA, and private sector healthcare worldwide.</h2>
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic06})`}}>
                             <header className="major">
                                 <h3>DoD Healthcare Management System Modernization (DHMSM)</h3>
+                                <h2 className="three-article-h2">Oversees the acquisition and deployment of MHS GENESIS. Defense Medical Information Exchange (DMIX) provides technical solutions for seamless data sharing and interoperable EHRs that will evolve with national standards.</h2>
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic05})`}}>
                             <header className="major">
-                                <h3>Joint Operational Medicine Information Systems (JOMIS)</h3>
+                                <h3 style={{marginTop : '8vh'}}>Joint Operational Medicine Information Systems (JOMIS)</h3>
+                                <h2 className="three-article-h2">Leads the acquisition and deployment of MHS GENESIS in operational medicine while sustaining the Theater Medical Information Program-Joint (TMIP-J) products. Mobile Computing Capability (MCC) is a medical application that allows first responders to document patient status and treatments rendered at the point of injury.</h2>
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
