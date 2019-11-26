@@ -5,6 +5,7 @@ import React from 'react';
 //import Layout from '../components/layout'
 import HomeContent from '../components/HomeContent';
 //import Banner from '../components/Banner'
+import { graphql, StaticQuery } from "gatsby";
 
 //import pic01 from '../assets/images/pic01.jpg'
 //import pic02 from '../assets/images/pic02.jpg'
@@ -19,7 +20,25 @@ class HomeIndex extends React.Component {
     render() {
 
         return (
-            <HomeContent />
+            <StaticQuery
+                query={graphql`
+                    query {
+                      allMarkdownRemark(sort: {fields: [frontmatter___date], order: ASC}) {
+                        edges {
+                          node {
+                            frontmatter {
+                              title
+                              date
+                            }
+                          }
+                        }
+                      }
+                    }
+                `}
+                render={data => (
+                    <HomeContent data={data} />
+                )}
+            />
         );
     }
 }
