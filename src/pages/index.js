@@ -23,13 +23,14 @@ class HomeIndex extends React.Component {
             <StaticQuery
                 query={graphql`
                     query {
-                      allMarkdownRemark(sort: {fields: [frontmatter___date], order: ASC}) {
+                      allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
                         edges {
                           node {
                             frontmatter {
                               title
                               date
                             }
+                            excerpt(pruneLength:150)
                           }
                         }
                       }
