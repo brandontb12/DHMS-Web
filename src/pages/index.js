@@ -28,7 +28,7 @@ class HomeIndex extends React.Component {
                           node {
                             frontmatter {
                               title
-                              date
+                              date(formatString: "MMM Do, YYYY")
                             }
                             excerpt(pruneLength:150)
                           }
