@@ -41,7 +41,7 @@ class HomeIndex extends React.Component {
                         </article>
                         <article style={{backgroundImage: `url(${contractPic})`}}>
                             <header className="major">
-                                <h3 className="contract-header" >CONTRACT. WITH. US.</h3>
+                                <h3 className="contract-header" >CONTRACT WITH US</h3>
                                 <div className="contract-link">
                                     <Link className="button contract" to="/">Organizations</Link>
                                     <Link className="button contract" to="/">Opportunities</Link>
@@ -90,10 +90,10 @@ class HomeIndex extends React.Component {
                     </section>
                     <section id="two">
                         <div className="inner">
-                            <header className="major">
-                                <h2>Massa libero</h2>
+                            <header>
+                                <h2></h2>
                             </header>
-                            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
+                            <p></p>
                             <ul className="actions">
                                 <li><Link to="/landing" className="button next">Get Started</Link></li>
                             </ul>
