@@ -1,16 +1,32 @@
 import React from 'react';
 import BlogLandingContent from '../components/BlogLandingContent';
-//import { Link } from 'gatsby'
-//import Helmet from 'react-helmet'
-//import Layout from '../components/layout'
-//import BannerLanding from '../components/BannerLanding'
-
-//import pic08 from '../assets/images/pic08.jpg'
-//import pic09 from '../assets/images/pic09.jpg'
-//import pic10 from '../assets/images/pic10.jpg'
+import { graphql, StaticQuery } from "gatsby";
 
 const BlogLanding = (props) => (
-    <BlogLandingContent />
+    <StaticQuery 
+        query={graphql`
+                    query {
+                      allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
+                        edges {
+                          node {
+                            id
+                            frontmatter {
+                              title
+                              date(formatString: "MMM Do, YYYY")
+                              picture {
+                                 publicURL
+                              }
+                            }
+                            excerpt
+                          }
+                        }
+                      }
+                    }
+                `}
+        render={data => (
+            <BlogLandingContent data={data} />
+        )}
+    />
 )
 
 export default BlogLanding
