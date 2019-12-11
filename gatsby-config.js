@@ -1,9 +1,12 @@
+const path = require('path');
+
 module.exports = {
   siteMetadata: {
     title: "Gatsby Starter - Forty V2",
     author: "Hunter Chang",
     description: "A Gatsby.js V2 Starter based on Forty by HTML5 UP"
   },
+  pathPrefix: process.env.BASEURL || '/',
   plugins: [
     'gatsby-plugin-react-helmet',
     {

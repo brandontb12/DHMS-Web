@@ -35,6 +35,7 @@
 			overflow: hidden;
 			position: relative;
 			width: 40%;
+			//border:.1vh solid white;
 
 			.image {
 				display: none;
@@ -56,6 +57,14 @@
 				word-spacing: 3rem;
 				margin-bottom: 5vh;
 				font-size: 7vh;
+			}
+
+			.blog-info {
+				margin-bottom: 12vh;
+			}
+
+			.three-article-h2 {
+				font-size: 1.8vh;
 			}
 
 			h3 {
@@ -139,6 +148,18 @@
 				width: 60%;
 			}
 
+			&:nth-child(5n) {
+				width: 33.33333%;
+			}
+
+			&:nth-child(6n) {
+				width: 33.33333%;
+			}
+
+			&:nth-child(7n) {
+				width: 33.33333%;
+			}
+
 			&:nth-child(6n - 5) {
 				&:before {
 					background-color: _palette(accent1);
@@ -147,7 +168,7 @@
 
 			&:nth-child(6n - 4) {
 				&:before {
-					background-color: _palette(accent2);
+					background-color: _palette(accent7);
 				}
 			}
 

@@ -11,13 +11,22 @@
 		100% { top: 0; opacity: 1; }
 	}
 
+	.nav-bar {
+		margin-top: 3vh;
+		margin-left: 4.5vw;
+	}
+
+	.nav-tabs {
+		padding: 2vw;
+	}
+
 	#header {
 		@include vendor('display', 'flex');
 		background-color: _palette(bg-alt);
 		box-shadow: 0 0 0.25em 0 rgba(0,0,0,0.15);
 		cursor: default;
 		font-weight: _font(weight-bold);
-		height: 3.25em;
+		height: 8.2vh;
 		left: 0;
 		letter-spacing: _font(letter-spacing-alt);
 		line-height: 3.25em;
@@ -27,12 +36,13 @@
 		top: 0;
 		width: 100%;
 		z-index: _misc(z-index-base);
+		border-bottom: .5vh solid white;
 
 		.logo {
 			border: 0;
 			display: inline-block;
 			font-size: 0.8em;
-			height: inherit;
+			height: 2vh;
 			line-height: inherit;
 			padding: 0 1.5em;
 
@@ -62,6 +72,10 @@
 			}
 		}
 
+		.pic-attributes {
+			height: 11.9vh;
+			width: 5vw;
+		}
 
 		.header {
 			font-size: 2vw;
@@ -86,7 +100,6 @@
 				display:none;
 			}
 		}
-		
 
 		nav {
 			@include vendor('display', 'flex');
