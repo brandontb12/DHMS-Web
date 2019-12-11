@@ -9,7 +9,7 @@ const Header = (props) => (
     //     <img src={logo}></img>
     //     <Link to="/" className="logo"><span class="header">DEFENSE HEALTH MANAGEMENT SYSTEMS</span>&nbsp;<span class="subheader">Program Executive Office</span></Link>
     //     <nav>
-    //         <a className="menu-link" onClick={props.onToggleMenu} href="javascript:;">Menu</a>
+    //         <a className="menu-link" onClick={props.onToggleMenu} to="javascript:;">Menu</a>
     //     </nav>
     //     <ul>
     //         <li><Link to="/">Home</Link></li>
@@ -21,13 +21,13 @@ const Header = (props) => (
     <>
     <Navbar id="header" className="alt">
         <img className="pic-attributes" src={logo}></img>
-        <Nav.Link target="_top" href="/" className="logo"><span class="header">DEFENSE HEALTH MANAGEMENT SYSTEMS</span>&nbsp;<span class="subheader">Program Executive Office</span></Nav.Link>
+        <Link target="_top" to="/" className="logo"><span class="header">DEFENSE HEALTH MANAGEMENT SYSTEMS</span>&nbsp;<span class="subheader">Program Executive Office</span></Link>
     </Navbar>
     <Navbar className="nav-bar">
-        <Nav.Link target="_top" className="nav-tabs" href="/">Home</Nav.Link>
-        <Nav.Link target="_top" className="nav-tabs" href="/landing">Landing</Nav.Link>
-        <Nav.Link target="_top" className="nav-tabs" href="/generic">Generic</Nav.Link>
-        <Nav.Link target="_top" className="nav-tabs" href="/elements">Elements</Nav.Link>
+        <Link className="nav-tabs" to="/">Home</Link>
+        <Link className="nav-tabs" to="/landing">Landing</Link>
+        <Link className="nav-tabs" to="/generic">Generic</Link>
+        <Link className="nav-tabs" to="/elements">Elements</Link>
     </Navbar>
     </>
 )
