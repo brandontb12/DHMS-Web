@@ -21,13 +21,13 @@ const Header = (props) => (
     <>
     <Navbar id="header" className="alt">
         <img className="pic-attributes" src={logo}></img>
-        <Nav.Link href="/" className="logo"><span class="header">DEFENSE HEALTH MANAGEMENT SYSTEMS</span>&nbsp;<span class="subheader">Program Executive Office</span></Nav.Link>
+        <Nav.Link target="_top" href="/" className="logo"><span class="header">DEFENSE HEALTH MANAGEMENT SYSTEMS</span>&nbsp;<span class="subheader">Program Executive Office</span></Nav.Link>
     </Navbar>
     <Navbar className="nav-bar">
-        <Nav.Link className="nav-tabs" href="/">Home</Nav.Link>
-        <Nav.Link className="nav-tabs" href="/landing">Landing</Nav.Link>
-        <Nav.Link className="nav-tabs" href="/generic">Generic</Nav.Link>
-        <Nav.Link className="nav-tabs" href="/elements">Elements</Nav.Link>
+        <Nav.Link target="_top" className="nav-tabs" href="/">Home</Nav.Link>
+        <Nav.Link target="_top" className="nav-tabs" href="/landing">Landing</Nav.Link>
+        <Nav.Link target="_top" className="nav-tabs" href="/generic">Generic</Nav.Link>
+        <Nav.Link target="_top" className="nav-tabs" href="/elements">Elements</Nav.Link>
     </Navbar>
     </>
 )
