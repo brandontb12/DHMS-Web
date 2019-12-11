@@ -1,33 +1,32 @@
 import React from 'react';
-import HomeContent from '../components/HomeContent';
+import BlogLandingContent from '../components/BlogLandingContent';
 import { graphql, StaticQuery } from "gatsby";
 
-class HomeIndex extends React.Component {
-    render() {
-
-        return (
-            <StaticQuery
-                query={graphql`
+const BlogLanding = (props) => (
+    <StaticQuery 
+        query={graphql`
                     query {
                       allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
                         edges {
                           node {
+                            id
                             frontmatter {
                               title
                               date(formatString: "MMM Do, YYYY")
+                              picture {
+                                 publicURL
+                              }
                             }
-                            excerpt(pruneLength:150)
+                            excerpt
                           }
                         }
                       }
                     }
                 `}
-                render={data => (
-                    <HomeContent data={data} />
-                )}
-            />
-        );
-    }
-}
+        render={data => (
+            <BlogLandingContent data={data} />
+        )}
+    />
+)
 
-export default HomeIndex;
+export default BlogLanding
