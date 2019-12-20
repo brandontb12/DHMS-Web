@@ -42,11 +42,11 @@ class HomeContent extends React.Component {
                             <header className="major">
                                 <h3 className="contract-header" >CONTRACT. WITH. US.</h3>
                                 <div className="contract-link">
-                                    <Link className="button contract" to="/">Organizations</Link>
-                                    <Link className="button contract" to="/">Opportunities</Link>
-                                    <Link className="button contract" to="/">Conferences</Link>
-                                    <Link className="button contract" to="/">Training and Workshops</Link>
-                                    <Link className="button contract" to="/">Publications</Link>
+                                    <Link className="button contract" to="/organization">Organizations</Link>
+                                    <Link className="button contract" to="/opportunities">Opportunities</Link>
+                                    <Link className="button contract" to="/conferences">Conferences</Link>
+                                    <Link className="button contract" to="/training_workshops">Training and Workshops</Link>
+                                    <Link className="button contract" to="/publication">Publications</Link>
                                     <Link className="button contract" to="/blog_landing">Blog</Link>
                                 </div>
                             </header>
