@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, useStaticQuery, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
+import Img from "gatsby-image";
 
 import pic03 from '../assets/images/pic03.jpg';
 import pic04 from '../assets/images/pic04.jpg';
@@ -29,8 +30,17 @@ class HomeContent extends React.Component {
                     ]}
                 >
                 </Helmet>
-
                 <div id="main">
+
+                {/* Loop over all images */}
+                {/* <Img fluid={this.props.data.file.childImageSharp.fluid}/> */}
+                {/* {this.props.data.allFile.edges.map(({ node }) => (
+                    <Img fluid={node.childImageSharp.fluid}/>
+                ))} */}
+
+                {/* Grab a single image */}
+                {/* <Img fluid={this.props.data.allFile.edges[2].node.childImageSharp.fluid}/> */}
+
                     <section id="one" className="tiles">
                         <article style={{backgroundImage: `url(${flagPic})`}}>
                             <header className="major">
@@ -107,4 +117,25 @@ class HomeContent extends React.Component {
     }
 }
 
-export default HomeContent;
+export default () => {
+    const data = useStaticQuery(graphql `
+        query {
+            allFile(filter:{extension:{regex:"/(jpeg|jpg|gif|png)/"},  sourceInstanceName:{eq:"images"}}) {
+                edges {
+                    node {
+                        childImageSharp {
+                            fluid {
+                                ...GatsbyImageSharpFluid
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    `)
+    return (
+        <HomeContent data={data}/>
+    )
+}
+
+//  export default HomeContent;
