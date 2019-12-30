@@ -3,6 +3,7 @@ import { Link, useStaticQuery, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import Img from "gatsby-image";
+import backgroundImage from 'gatsby-background-image';
 
 import pic03 from '../assets/images/pic03.jpg';
 import pic04 from '../assets/images/pic04.jpg';
@@ -13,6 +14,7 @@ import flagPic from '../assets/images/DHMSFlag.jpg';
 import overviewPic from '../assets/images/overview.jpg'
 import blogPic from '../assets/images/blog.jpg'
 import ipopic from '../assets/images/dodva.jpg'
+import BackgroundImage from 'gatsby-background-image';
 
 class HomeContent extends React.Component {
     constructor(props) {
@@ -42,14 +44,16 @@ class HomeContent extends React.Component {
                 {/* <Img fluid={this.props.data.allFile.edges[2].node.childImageSharp.fluid}/> */}
 
                     <section id="one" className="tiles">
-                        <article style={{backgroundImage: `url(${flagPic})`}}>
-                            <header className="major">
-                                <h3>Defense Healthcare Management Systems</h3>
-                                <br/>
-                                <h2>The Program Executive Office, Defense Healthcare Management Systems (PEO DHMS) was chartered to transform the delivery of healthcare and advance data sharing for service members, veterans, and their families.</h2>
-                            </header>
-                            <Link to="/landing" className="link primary"></Link>
-                        </article>
+                        <BackgroundImage fluid={this.props.data.allFile.edges[2].node.childImageSharp.fluid} style={{height: '40%', width: '40%', maxHeight: '40em'}}>
+                            <article>
+                                    <header className="major">
+                                        <h3>Defense Healthcare Management Systems</h3>
+                                        <br/>
+                                        <h2>The Program Executive Office, Defense Healthcare Management Systems (PEO DHMS) was chartered to transform the delivery of healthcare and advance data sharing for service members, veterans, and their families.</h2>
+                                    </header>
+                                    <Link to="/landing" className="link primary"></Link>
+                            </article>
+                        </BackgroundImage>
                         <article style={{backgroundImage: `url(${contractPic})`}}>
                             <header className="major">
                                 <h3 className="contract-header" >CONTRACT WITH US</h3>

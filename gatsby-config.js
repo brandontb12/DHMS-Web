@@ -41,6 +41,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sharp`
     },
+    {
+      resolve: 'gatsby-background-image',
+      options: {
+        specialChars: '/:',
+      },
+    },
     'gatsby-transformer-remark',
     'gatsby-plugin-sass',
     'gatsby-plugin-offline'
