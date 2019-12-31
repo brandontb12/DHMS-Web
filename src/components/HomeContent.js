@@ -10,7 +10,7 @@ import pic04 from '../assets/images/pic04.jpg';
 import pic05 from '../assets/images/pic05.jpg';
 import pic06 from '../assets/images/pic06.jpg';
 import contractPic from '../assets/images/contract.jpg';
-import flagPic from '../assets/images/DHMSFlag.jpg';
+import flagPic from '../assets/images/dhmsflag.jpg';
 import overviewPic from '../assets/images/overview.jpg'
 import blogPic from '../assets/images/blog.jpg'
 import ipopic from '../assets/images/dodva.jpg'
