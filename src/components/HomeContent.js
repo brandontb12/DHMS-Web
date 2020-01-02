@@ -44,7 +44,7 @@ class HomeContent extends React.Component {
                 {/* <Img fluid={this.props.data.allFile.edges[2].node.childImageSharp.fluid}/> */}
 
                     <section id="one" className="tiles">
-                        <BackgroundImage fluid={this.props.data.allFile.edges[20].node.childImageSharp.fluid} className="tile-40">
+                        <BackgroundImage fluid={this.props.data.dhmsflag.childImageSharp.fluid} className="tile-40">
                             <article className="tile-accent-1">
                                     <header className="major">
                                         <h3>Defense Healthcare Management Systems</h3>
@@ -54,7 +54,7 @@ class HomeContent extends React.Component {
                                     <Link to="/landing" className="link primary"></Link>
                             </article>
                         </BackgroundImage>
-                        <BackgroundImage fluid={this.props.data.allFile.edges[19].node.childImageSharp.fluid} className="tile-60">
+                        <BackgroundImage fluid={this.props.data.contract.childImageSharp.fluid} className="tile-60">
                             <article className="tile-accent-2">
                                     <header className="major">
                                     <h3 className="contract-header" >CONTRACT WITH US</h3>
@@ -69,7 +69,7 @@ class HomeContent extends React.Component {
                                 </header>
                             </article>
                         </BackgroundImage>
-                        <BackgroundImage fluid={this.props.data.allFile.edges[12].node.childImageSharp.fluid} className="tile-60">
+                        <BackgroundImage fluid={this.props.data.overview.childImageSharp.fluid} className="tile-60">
                             <article className="tile-accent-3">
                                 <header className="major">
                                     <h3 className="contract-header">Program Overview</h3>
@@ -78,7 +78,7 @@ class HomeContent extends React.Component {
                                 <Link to="/landing" className="link primary"></Link>
                             </article>
                         </BackgroundImage>
-                        <BackgroundImage fluid={this.props.data.allFile.edges[2].node.childImageSharp.fluid} className="tile-40">
+                        <BackgroundImage fluid={this.props.data.blog.childImageSharp.fluid} className="tile-40">
                             <article className="tile-accent-4">
                                 <header className="major">
                                     <h3 className="contract-header">Blogs</h3>
@@ -87,7 +87,7 @@ class HomeContent extends React.Component {
                                 <Link to="/blog_landing" className="link primary"></Link>
                             </article>
                         </BackgroundImage>
-                        <BackgroundImage fluid={this.props.data.allFile.edges[18].node.childImageSharp.fluid} className="tile-33">
+                        <BackgroundImage fluid={this.props.data.dodflag.childImageSharp.fluid} className="tile-33">
                             <article className="tile-accent-5">
                                 <header className="major">
                                     <h3 style={{marginBottom : '7vh'}}>DoD/VA Interagency Program Office (IPO)</h3>
@@ -96,7 +96,7 @@ class HomeContent extends React.Component {
                                 <Link to="/landing" className="link primary"></Link>
                             </article>
                         </BackgroundImage>
-                        <BackgroundImage fluid={this.props.data.allFile.edges[3].node.childImageSharp.fluid} className="tile-33">
+                        <BackgroundImage fluid={this.props.data.modern.childImageSharp.fluid} className="tile-33">
                             <article className="tile-accent-6">
                                 <header className="major">
                                     <h3>DoD Healthcare Management System Modernization (DHMSM)</h3>
@@ -105,8 +105,8 @@ class HomeContent extends React.Component {
                                 <Link to="/landing" className="link primary"></Link>
                             </article>
                         </BackgroundImage>
-                        <BackgroundImage fluid={this.props.data.allFile.edges[4].node.childImageSharp.fluid} className="tile-33">
-                            <article>
+                        <BackgroundImage fluid={this.props.data.jomis.childImageSharp.fluid} className="tile-33">
+                            <article className="tile-accent-7">
                                 <header className="major">
                                     <h3 style={{marginTop : '8vh'}}>Joint Operational Medicine Information Systems (JOMIS)</h3>
                                     <h2 className="three-article-h2">Leads the acquisition and deployment of MHS GENESIS in operational medicine while sustaining the Theater Medical Information Program-Joint (TMIP-J) products. Mobile Computing Capability (MCC) is a medical application that allows first responders to document patient status and treatments rendered at the point of injury.</h2>
@@ -136,15 +136,53 @@ class HomeContent extends React.Component {
 export default () => {
     const data = useStaticQuery(graphql `
         query {
-            allFile(filter:{extension:{regex:"/(jpeg|jpg|gif|png)/"},  sourceInstanceName:{eq:"images"}}) {
-                edges {
-                    node {
-                        childImageSharp {
-                            fluid {
-                                ...GatsbyImageSharpFluid
-                            }
-                        }
-                    }
+            dhmsflag: file(base: { eq: "dhmsflag.jpg" }) {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+            }
+            contract: file(base: { eq: "contract.jpg" }) {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+            }
+            overview: file(base: { eq: "overview.jpg" }) {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+            }
+            blog: file(base: { eq: "blog.jpg" }) {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+            }
+            dodflag: file(base: { eq: "dodva.jpg" }) {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+            }
+            modern: file(base: { eq: "jomis.jpg" }) {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+            }
+            jomis: file(base: { eq: "dhmsm.jpg" }) {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
                 }
             }
         }

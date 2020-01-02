@@ -57,6 +57,11 @@
 				background-color: _palette(accent6);
 			}
 		}
+		.tile-accent-7 {
+			&:before {
+				background-color: _palette(accent7);
+			}
+		}
 
 
 		div {
@@ -98,7 +103,7 @@
 				}
 
 				.contract-header {
-					word-spacing: 3rem;
+					word-spacing: 2vw;
 					margin-bottom: 5vh;
 					font-size: 7vh;
 				}
