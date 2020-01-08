@@ -25,24 +25,15 @@ class HomeContent extends React.Component {
         return (
             <Layout>
                 <Helmet
-                    title="Gatsby Starter - Forty"
+                    title="DEFENSE HEALTH MANAGEMENT SYSTEMS"
                     meta={[
                         { name: 'description', content: 'Sample' },
                         { name: 'keywords', content: 'sample, something' },
                     ]}
                 >
+                    <html lang="en"/>
                 </Helmet>
                 <div id="main">
-
-                {/* Loop over all images */}
-                {/* <Img fluid={this.props.data.file.childImageSharp.fluid}/> */}
-                {/* {this.props.data.allFile.edges.map(({ node }) => (
-                    <Img fluid={node.childImageSharp.fluid}/>
-                ))} */}
-
-                {/* Grab a single image */}
-                {/* <Img fluid={this.props.data.allFile.edges[2].node.childImageSharp.fluid}/> */}
-
                     <section id="one" className="tiles">
                         <BackgroundImage fluid={this.props.data.dhmsflag.childImageSharp.fluid} className="tile-40">
                             <article className="tile-accent-1">
@@ -51,7 +42,7 @@ class HomeContent extends React.Component {
                                         <br/>
                                         <h2>The Program Executive Office, Defense Healthcare Management Systems (PEO DHMS) was chartered to transform the delivery of healthcare and advance data sharing for service members, veterans, and their families.</h2>
                                     </header>
-                                    <Link to="/landing" className="link primary"></Link>
+                                    <Link to="/landing" className="link primary" aria-label="landing"></Link>
                             </article>
                         </BackgroundImage>
                         <BackgroundImage fluid={this.props.data.contract.childImageSharp.fluid} className="tile-60">
@@ -59,12 +50,12 @@ class HomeContent extends React.Component {
                                     <header className="major">
                                     <h3 className="contract-header" >CONTRACT WITH US</h3>
                                     <div className="contract-link">
-                                        <Link className="button contract" to="/organization">Organizations</Link>
-                                        <Link className="button contract" to="/opportunities">Opportunities</Link>
-                                        <Link className="button contract" to="/conferences">Conferences</Link>
-                                        <Link className="button contract" to="/training_workshops">Training and Workshops</Link>
-                                        <Link className="button contract" to="/publication">Publications</Link>
-                                        <Link className="button contract" to="/blog_landing">Blog</Link>
+                                        <Link className="button contract" to="/organization" aria-label="Organizations">Organizations</Link>
+                                        <Link className="button contract" to="/opportunities" aria-label="Opportunities">Opportunities</Link>
+                                        <Link className="button contract" to="/conferences" aria-label="Conferences">Conferences</Link>
+                                        <Link className="button contract" to="/training_workshops" aria-label="Training and Workshops">Training and Workshops</Link>
+                                        <Link className="button contract" to="/publication" aria-label="Publications">Publications</Link>
+                                        <Link className="button contract" to="/blog_landing" aria-label="Blog">Blog</Link>
                                     </div>
                                 </header>
                             </article>
@@ -75,7 +66,7 @@ class HomeContent extends React.Component {
                                     <h3 className="contract-header">Program Overview</h3>
                                     <h2>PEO DHMS is an acquisition organization with a direct reporting relationship to the Office of the Under Secretary of Defense for Acquisition and Sustainment (OUSD(A&S)), and administratively attached to the Defense Health Agency.</h2>
                                 </header>
-                                <Link to="/landing" className="link primary"></Link>
+                                <Link to="/landing" className="link primary" aria-label="landing"></Link>
                             </article>
                         </BackgroundImage>
                         <BackgroundImage fluid={this.props.data.blog.childImageSharp.fluid} className="tile-40">
@@ -84,7 +75,7 @@ class HomeContent extends React.Component {
                                     <h3 className="contract-header">Blogs</h3>
                                     <h2 className="blog-info">Visit our blog page for all up to date news regarding DHMS</h2>
                                 </header>
-                                <Link to="/blog_landing" className="link primary"></Link>
+                                <Link to="/blog_landing" className="link primary" aria-label="Blog"></Link>
                             </article>
                         </BackgroundImage>
                         <BackgroundImage fluid={this.props.data.dodflag.childImageSharp.fluid} className="tile-33">
@@ -93,7 +84,7 @@ class HomeContent extends React.Component {
                                     <h3 style={{marginBottom : '7vh'}}>DoD/VA Interagency Program Office (IPO)</h3>
                                     <h2 className="three-article-h2">Leads the DoD and Veterans Affairs' (VA) efforts to implement national health data standards to ensure interoperability among the DoD, VA, and private sector healthcare worldwide.</h2>
                                 </header>
-                                <Link to="/landing" className="link primary"></Link>
+                                <Link to="/landing" className="link primary" aria-label="landing"></Link>
                             </article>
                         </BackgroundImage>
                         <BackgroundImage fluid={this.props.data.modern.childImageSharp.fluid} className="tile-33">
@@ -102,7 +93,7 @@ class HomeContent extends React.Component {
                                     <h3>DoD Healthcare Management System Modernization (DHMSM)</h3>
                                     <h2 className="three-article-h2">Oversees the acquisition and deployment of MHS GENESIS. Defense Medical Information Exchange (DMIX) provides technical solutions for seamless data sharing and interoperable EHRs that will evolve with national standards.</h2>
                                 </header>
-                                <Link to="/landing" className="link primary"></Link>
+                                <Link to="/landing" className="link primary" aria-label="landing"></Link>
                             </article>
                         </BackgroundImage>
                         <BackgroundImage fluid={this.props.data.jomis.childImageSharp.fluid} className="tile-33">
@@ -111,7 +102,7 @@ class HomeContent extends React.Component {
                                     <h3 style={{marginTop : '8vh'}}>Joint Operational Medicine Information Systems (JOMIS)</h3>
                                     <h2 className="three-article-h2">Leads the acquisition and deployment of MHS GENESIS in operational medicine while sustaining the Theater Medical Information Program-Joint (TMIP-J) products. Mobile Computing Capability (MCC) is a medical application that allows first responders to document patient status and treatments rendered at the point of injury.</h2>
                                 </header>
-                                <Link to="/landing" className="link primary"></Link>
+                                <Link to="/landing" className="link primary" aria-label="landing"></Link>
                             </article>
                         </BackgroundImage>
                     </section>
@@ -122,7 +113,7 @@ class HomeContent extends React.Component {
                             </header>
                             <p></p>
                             <ul className="actions">
-                                <li><Link to="/landing" className="button next">Get Started</Link></li>
+                                <li><Link to="/landing" className="button next" aria-label="landing">Get Started</Link></li>
                             </ul>
                         </div>
                     </section>
@@ -191,5 +182,3 @@ export default () => {
         <HomeContent data={data}/>
     )
 }
-
-//  export default HomeContent;

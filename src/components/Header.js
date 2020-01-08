@@ -20,7 +20,7 @@ const Header = (props) => (
     // </header>
     <>
     <Navbar id="header" className="alt">
-        <img className="pic-attributes" src={logo}></img>
+        <img className="pic-attributes" src={logo} alt="Picture Attributes"></img>
         <Link target="_top" to="/" className="logo"><span class="header">DEFENSE HEALTH MANAGEMENT SYSTEMS</span>&nbsp;<span class="subheader">Program Executive Office</span></Link>
     </Navbar>
     <Navbar className="nav-bar">
