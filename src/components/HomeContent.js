@@ -37,15 +37,72 @@ class HomeContent extends React.Component {
                     <section id="one" className="tiles">
                         <BackgroundImage fluid={this.props.data.dhmsflag.childImageSharp.fluid} className="tile-40">
                             <article className="tile-accent-1">
-                                    <header className="major">
+                                    <header>
+                                        <h2>CUSTOMER-FOCUSED QUALITY-DRIVEN HEALTHCARE MARKETING</h2>
                                         <h3>Defense Healthcare Management Systems</h3>
-                                        <br/>
-                                        <h2>The Program Executive Office, Defense Healthcare Management Systems (PEO DHMS) was chartered to transform the delivery of healthcare and advance data sharing for service members, veterans, and their families.</h2>
                                     </header>
-                                    <Link to="/landing" className="link primary" aria-label="landing"></Link>
                             </article>
                         </BackgroundImage>
-                        <BackgroundImage fluid={this.props.data.contract.childImageSharp.fluid} className="tile-60">
+                        <article className="tile-accent-2 tile-tag-line light-background">
+                            <header className="tag-line">
+                                <h3>DEDICATED TO YOUR ONLINE SUCCESS</h3>
+                                <br/>
+                                <h2>The Program Executive Office, Defense Healthcare Management Systems (PEO DHMS) was chartered to transform the delivery of healthcare and advance data sharing for service members, veterans, and their families. PEO DHMS is an acquisition organization with a direct reporting relationship to the Office of the Under Secretary of Defense for Acquisition and Sustainment (OUSD(A&S)), and administratively attached to the Defense Health Agency.</h2>
+                            </header>
+                        </article>
+                        <article className="tile-accent-2 tile-orgs light-background">
+                            <header className="orgs">
+                                <h3>PEOPLE DRESS TO IMPRESS.</h3>
+                                <h3>WE WEB DESIGN BUSINESS IN SUCCESS</h3>
+                                <div className="org-row">
+                                    <Link to="/blog_landing" className="link primary" aria-label="Blog">
+                                        <div className="org-column">
+                                            <Img fluid={this.props.data.blog.childImageSharp.fluid} className="org-img"/>
+                                            <h3>Blogs</h3>
+                                            <h2>Latest Available News</h2>
+                                        </div>
+                                    </Link>
+                                    <Link to="/opportunities" className="link primary" aria-label="Opportunities">
+                                        <div className="org-column">
+                                            <Img fluid={this.props.data.contract.childImageSharp.fluid} className="org-img"/>
+                                            <h3>Contract With Us</h3>
+                                            <h2>Start Ups, Business, Development</h2>
+                                        </div>
+                                    </Link>
+                                    <Link to="/organization" className="link primary" aria-label="Organizations">
+                                        <div className="org-column">
+                                            <Img fluid={this.props.data.overview.childImageSharp.fluid} className="org-img"/>
+                                            <h3>Organizations</h3>
+                                            <h2>Start Ups, Business, Development</h2>
+                                        </div>
+                                    </Link>
+                                </div>
+                                <div className="org-row" style={{marginTop:"5vh"}}>
+                                    <Link to="/training_workshops" className="link primary" aria-label="Blog">
+                                        <div className="org-column">
+                                            <Img fluid={this.props.data.jomis.childImageSharp.fluid} className="org-img"/>
+                                            <h3>Training/Workshops</h3>
+                                            <h2>Start Ups, Business, Development</h2>
+                                        </div>
+                                    </Link>
+                                    <Link to="/opportunities" className="link primary" aria-label="Opportunities">
+                                        <div className="org-column">
+                                            <Img fluid={this.props.data.modern.childImageSharp.fluid} className="org-img"/>
+                                            <h3>Opportunities</h3>
+                                            <h2>Start Ups, Business, Development</h2>
+                                        </div>
+                                    </Link>
+                                    <Link to="/conferences" className="link primary" aria-label="Organizations">
+                                        <div className="org-column">
+                                            <Img fluid={this.props.data.dodflag.childImageSharp.fluid} className="org-img"/>
+                                            <h3>Conferences</h3>
+                                            <h2>Start Ups, Business, Development</h2>
+                                        </div>
+                                    </Link>
+                                </div>
+                            </header>
+                        </article>
+                        {/* <BackgroundImage fluid={this.props.data.contract.childImageSharp.fluid} className="tile-60">
                             <article className="tile-accent-2">
                                     <header className="major">
                                     <h3 className="contract-header" >CONTRACT WITH US</h3>
@@ -77,7 +134,7 @@ class HomeContent extends React.Component {
                                 </header>
                                 <Link to="/blog_landing" className="link primary" aria-label="Blog"></Link>
                             </article>
-                        </BackgroundImage>
+                        </BackgroundImage> */}
                         <BackgroundImage fluid={this.props.data.dodflag.childImageSharp.fluid} className="tile-33">
                             <article className="tile-accent-5">
                                 <header className="major">

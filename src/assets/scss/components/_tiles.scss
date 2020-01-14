@@ -16,11 +16,18 @@
 		}
 
 		.tile-40 {
-			width: 40%;
+			width: 100%;
+			height: 100vh;
 		}
 
-		.tile-60 {
-			width: 60%;
+		.tile-tag-line {
+			width: 100%;
+			height: 60vh;
+		}
+
+		.tile-orgs {
+			width: 100%;
+			height: 120vh;
 		}
 
 		.tile-33 {
@@ -31,6 +38,8 @@
 			&:before {
 				background-color: _palette(accent1);
 			}
+			width: 100%;
+			height: 100vh;
 		}
 		.tile-accent-2 {
 			&:before {
@@ -61,6 +70,88 @@
 			&:before {
 				background-color: _palette(accent7);
 			}
+		}
+
+		article {
+			.tag-line {
+				h3 {
+					text-align: center;
+					color: black;
+					font-family: 'Candara';
+					font-weight: bold;
+				}
+				h2 {
+					text-align: center;
+					color: rgb(87, 78, 78);
+					font-family: 'Candara';
+					font-weight: 100;
+					font-size: 3vh;
+				}
+				margin-left: 15vw;
+				margin-right: 15vw;
+				margin-top: 10vh;
+			}
+
+			.orgs {
+				h3 {
+					text-align: center;
+					color: black;
+					font-family: 'Candara';
+					font-weight: bold;
+				}
+				h2 {
+					text-align: center;
+					color: rgb(87, 78, 78);
+					font-family: 'Candara';
+					font-weight: 100;
+					font-size: 3vh;
+				}
+				margin-left: 15vw;
+				margin-right: 15vw;
+			}
+			
+			.org-row {
+				content: "";
+				clear: both;
+				display: table;
+				width: 100%;
+			}
+
+			.org-column {
+				float: left;
+				width: 33%;
+				padding: 10px;
+				height: 50%;
+
+				h3 {
+					text-align: center;
+					color: black;
+					font-family: 'Candara';
+					font-weight: bold;
+					font-size: 3vh;
+					letter-spacing: .5vw;
+					padding: 0;
+					margin: 0;
+				}
+				h2 {
+					text-align: center;
+					color: rgb(87, 78, 78);
+					font-family: 'Candara';
+					font-weight: 100;
+					font-size: 2.5vh;
+					padding: 0;
+					margin: 0;
+				}
+			  }
+
+			  .org-img {
+				  width: 100%;
+				  height: 30vh;
+			  }
+		}
+
+		.light-background {
+			background-color: white;
 		}
 
 
@@ -117,8 +208,9 @@
 				}
 
 				h3 {
-					font-size: 1.4em;
+					font-size: 13vh;
 					text-align: center;
+					font-family: 'Candara';
 					a {
 						&:hover {
 							color: inherit !important;
@@ -127,12 +219,14 @@
 				}
 
 				h2 {
-					visibility: hidden;
+					visibility: visible;
 					font-size: 1em;
 					font-weight: _font(weight-bold);
 					letter-spacing: _font(letter-spacing-alt);
 					margin-bottom: 0;
 					text-transform: uppercase;
+					text-align: center;
+					font-family: 'Candara';
 				}
 
 				.link.primary {
@@ -145,46 +239,46 @@
 					z-index: 4;
 				}
 
-				&:before {
-					@include vendor('transition', 'opacity 0.5s ease');
-					bottom: 0;
-					content: '';
-					display: block;
-					height: 100%;
-					left: 0;
-					opacity: 0;
-					position: absolute;
-					width: 100%;
-					z-index: 2;
-				}
+				// &:before {
+				// 	@include vendor('transition', 'opacity 0.5s ease');
+				// 	bottom: 0;
+				// 	content: '';
+				// 	display: block;
+				// 	height: 100%;
+				// 	left: 0;
+				// 	opacity: 0;
+				// 	position: absolute;
+				// 	width: 100%;
+				// 	z-index: 2;
+				// }
 
-				&:after {
-					background-color: transparentize(_palette(bg), 0.75);
-					content: '';
-					display: block;
-					height: 100%;
-					left: 0;
-					position: absolute;
-					top: 0;
-					width: 100%;
-					z-index: 1;
-				}
+				// &:after {
+				// 	background-color: transparentize(_palette(bg), 0.75);
+				// 	content: '';
+				// 	display: block;
+				// 	height: 100%;
+				// 	left: 0;
+				// 	position: absolute;
+				// 	top: 0;
+				// 	width: 100%;
+				// 	z-index: 1;
+				// }
 
-				&:hover {
-					&:before {
-						opacity: 0.5;
-					}
-					header {
-						transform: translateY(-5vh);
-						transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1),background 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-					}
-					h2 {
-						visibility: visible;
-					}
-					.contract-link {
-						visibility: visible;
-					}
-				}
+				// &:hover {
+				// 	&:before {
+				// 		opacity: 0.5;
+				// 	}
+				// 	header {
+				// 		transform: translateY(-5vh);
+				// 		transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1),background 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+				// 	}
+				// 	h2 {
+				// 		visibility: visible;
+				// 	}
+				// 	.contract-link {
+				// 		visibility: visible;
+				// 	}
+				// }
 
 				&.is-transitioning {
 					@include vendor('transform', 'scale(0.95)');
