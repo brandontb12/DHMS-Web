@@ -15,6 +15,8 @@ import overviewPic from '../assets/images/overview.jpg'
 import blogPic from '../assets/images/blog.jpg'
 import ipopic from '../assets/images/dodva.jpg'
 import BackgroundImage from 'gatsby-background-image';
+import CongressVideo from '../assets/videos/FTICongress.webm'
+import OverviewVideo from '../assets/videos/FTIOverview.webm'
 
 class HomeContent extends React.Component {
     constructor(props) {
@@ -62,11 +64,11 @@ class HomeContent extends React.Component {
                                             <h2>Latest Available News</h2>
                                         </div>
                                     </Link>
-                                    <Link to="/opportunities" className="link primary" aria-label="Opportunities">
+                                    <Link to="/blog_landing" className="link primary" aria-label="Blog">
                                         <div className="org-column">
                                             <Img fluid={this.props.data.contract.childImageSharp.fluid} className="org-img"/>
-                                            <h3>Contract With Us</h3>
-                                            <h2>Start Ups, Business, Development</h2>
+                                            <h3>Blogs</h3>
+                                            <h2>Latest Available News</h2>
                                         </div>
                                     </Link>
                                     <Link to="/organization" className="link primary" aria-label="Organizations">
@@ -135,44 +137,26 @@ class HomeContent extends React.Component {
                                 <Link to="/blog_landing" className="link primary" aria-label="Blog"></Link>
                             </article>
                         </BackgroundImage> */}
-                        <BackgroundImage fluid={this.props.data.dodflag.childImageSharp.fluid} className="tile-33">
-                            <article className="tile-accent-5">
-                                <header className="major">
-                                    <h3 style={{marginBottom : '7vh'}}>DoD/VA Interagency Program Office (IPO)</h3>
-                                    <h2 className="three-article-h2">Leads the DoD and Veterans Affairs' (VA) efforts to implement national health data standards to ensure interoperability among the DoD, VA, and private sector healthcare worldwide.</h2>
-                                </header>
-                                <Link to="/landing" className="link primary" aria-label="landing"></Link>
-                            </article>
-                        </BackgroundImage>
-                        <BackgroundImage fluid={this.props.data.modern.childImageSharp.fluid} className="tile-33">
-                            <article className="tile-accent-6">
-                                <header className="major">
-                                    <h3>DoD Healthcare Management System Modernization (DHMSM)</h3>
-                                    <h2 className="three-article-h2">Oversees the acquisition and deployment of MHS GENESIS. Defense Medical Information Exchange (DMIX) provides technical solutions for seamless data sharing and interoperable EHRs that will evolve with national standards.</h2>
-                                </header>
-                                <Link to="/landing" className="link primary" aria-label="landing"></Link>
-                            </article>
-                        </BackgroundImage>
-                        <BackgroundImage fluid={this.props.data.jomis.childImageSharp.fluid} className="tile-33">
-                            <article className="tile-accent-7">
-                                <header className="major">
-                                    <h3 style={{marginTop : '8vh'}}>Joint Operational Medicine Information Systems (JOMIS)</h3>
-                                    <h2 className="three-article-h2">Leads the acquisition and deployment of MHS GENESIS in operational medicine while sustaining the Theater Medical Information Program-Joint (TMIP-J) products. Mobile Computing Capability (MCC) is a medical application that allows first responders to document patient status and treatments rendered at the point of injury.</h2>
-                                </header>
-                                <Link to="/landing" className="link primary" aria-label="landing"></Link>
-                            </article>
-                        </BackgroundImage>
                     </section>
-                    <section id="two">
-                        <div className="inner">
-                            <header>
-                                <h2></h2>
-                            </header>
-                            <p></p>
-                            <ul className="actions">
-                                <li><Link to="/landing" className="button next" aria-label="landing">Get Started</Link></li>
-                            </ul>
-                        </div>
+                    <section id="two" className="tiles">
+                        <article className="tile-accent-2 tile-vids dark-background">
+                            <div className="vids">
+                                <div className="vid-row">
+                                    <div className="vid-column">
+                                        <h2>FTI Congressional SBIR Hearing</h2>
+                                        <video controls>
+                                            <source src={CongressVideo} type="video/webm"/>
+                                        </video>
+                                    </div>
+                                    <div className="vid-column">
+                                        <h2>FTI Overview</h2>
+                                        <video controls>
+                                            <source src={OverviewVideo} type="video/webm"/>
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
                     </section>
                 </div>
 

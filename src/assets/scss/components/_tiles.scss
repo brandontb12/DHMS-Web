@@ -27,7 +27,12 @@
 
 		.tile-orgs {
 			width: 100%;
-			height: 120vh;
+			height: 110vh;
+		}
+
+		.tile-vids {
+			width: 100%;
+			height: 60%;
 		}
 
 		.tile-33 {
@@ -120,7 +125,7 @@
 			.org-column {
 				float: left;
 				width: 33%;
-				padding: 10px;
+				padding: 1%;
 				height: 50%;
 
 				h3 {
@@ -142,16 +147,57 @@
 					padding: 0;
 					margin: 0;
 				}
-			  }
+			}
 
-			  .org-img {
-				  width: 100%;
-				  height: 30vh;
+			.vids {
+				margin-left: 3%;
+				margin-right: 3%;
+			}
+
+			.vid-row {
+				content: "";
+				clear: both;
+				display: table;
+				width: 100%;
+			}
+
+			.vid-column {
+				float: left;
+				width: 50%;
+				padding: 2%;
+				height: 50%;
+
+				h3 {
+					text-align: center;
+					color: black;
+					font-family: 'Candara';
+					font-weight: bold;
+					font-size: 3vh;
+					letter-spacing: .5vw;
+					padding: 0;
+					margin: 0;
+				}
+				h2 {
+					text-align: center;
+					color: white;
+					font-family: 'Candara';
+					font-weight: 100;
+					font-size: 2.5vh;
+					padding: 0;
+					margin: 0;
+				}
+				video {
+					width: 100%;
+				}
 			  }
 		}
 
 		.light-background {
 			background-color: white;
+		}
+
+		.dark-background {
+			background-color: rgba(212, 212, 255, 0.1);
 		}
 
 
