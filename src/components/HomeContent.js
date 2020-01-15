@@ -17,6 +17,7 @@ import ipopic from '../assets/images/dodva.jpg'
 import BackgroundImage from 'gatsby-background-image';
 import CongressVideo from '../assets/videos/FTICongress.webm'
 import OverviewVideo from '../assets/videos/FTIOverview.webm'
+import Contact from './Contact'
 
 class HomeContent extends React.Component {
     constructor(props) {
@@ -26,8 +27,7 @@ class HomeContent extends React.Component {
     render() {
         return (
             <Layout>
-                <Helmet
-                    title="DEFENSE HEALTH MANAGEMENT SYSTEMS"
+                <Helmet title="DEFENSE HEALTH MANAGEMENT SYSTEMS"
                     meta={[
                         { name: 'description', content: 'Sample' },
                         { name: 'keywords', content: 'sample, something' },
@@ -64,11 +64,11 @@ class HomeContent extends React.Component {
                                             <h2>Latest Available News</h2>
                                         </div>
                                     </Link>
-                                    <Link to="/blog_landing" className="link primary" aria-label="Blog">
+                                    <Link to="/contracts" className="link primary" aria-label="Contracts">
                                         <div className="org-column">
                                             <Img fluid={this.props.data.contract.childImageSharp.fluid} className="org-img"/>
-                                            <h3>Blogs</h3>
-                                            <h2>Latest Available News</h2>
+                                            <h3>Contracts</h3>
+                                            <h2>Start Ups, Business, Development</h2>
                                         </div>
                                     </Link>
                                     <Link to="/organization" className="link primary" aria-label="Organizations">
@@ -80,17 +80,17 @@ class HomeContent extends React.Component {
                                     </Link>
                                 </div>
                                 <div className="org-row" style={{marginTop:"5vh"}}>
-                                    <Link to="/training_workshops" className="link primary" aria-label="Blog">
+                                    <Link to="/dhmsm" className="link primary" aria-label="Blog">
                                         <div className="org-column">
                                             <Img fluid={this.props.data.jomis.childImageSharp.fluid} className="org-img"/>
-                                            <h3>Training/Workshops</h3>
+                                            <h3>DHMSM</h3>
                                             <h2>Start Ups, Business, Development</h2>
                                         </div>
                                     </Link>
-                                    <Link to="/opportunities" className="link primary" aria-label="Opportunities">
+                                    <Link to="/jomis" className="link primary" aria-label="Opportunities">
                                         <div className="org-column">
                                             <Img fluid={this.props.data.modern.childImageSharp.fluid} className="org-img"/>
-                                            <h3>Opportunities</h3>
+                                            <h3>JOMIS</h3>
                                             <h2>Start Ups, Business, Development</h2>
                                         </div>
                                     </Link>
@@ -159,7 +159,7 @@ class HomeContent extends React.Component {
                         </article>
                     </section>
                 </div>
-
+                <Contact/>
             </Layout>
         );
     }
