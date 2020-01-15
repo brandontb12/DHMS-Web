@@ -217,6 +217,13 @@ export default () => {
                   }
                 }
             }
+            homelogo: file(base: { eq: "homeicon.jpg" }) {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+            }
         }
     `)
     return (

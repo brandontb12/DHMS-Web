@@ -26,7 +26,7 @@ class JomisLanding extends React.Component {
                             <h3>JOINT OPERATIONAL MEDICINE INFORMATION SYSTEMS</h3>
                             <h3>PROGRAM MANAGEMENT OFFICE</h3>
                             <BackgroundImage fluid={this.props.data.background.childImageSharp.fluid} className="background-img">
-                                <Img fluid={this.props.data.logo.childImageSharp.fluid} className="logo-img"/>
+                                <Img fluid={this.props.data.logo2.childImageSharp.fluid} className="logo-img"/>
                             </BackgroundImage>
                         </header>
                     </article>
@@ -66,6 +66,13 @@ export default () => {
                 }
             }
             ship: file(base: { eq: "jomisboat.png" }) {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+            }
+            logo2: file(base: { eq: "jomislogo2.png" }) {
                 childImageSharp {
                   fluid {
                     ...GatsbyImageSharpFluid
