@@ -1,6 +1,6 @@
 import React from 'react';
 import JomisLanding from '../components/JomisLanding';
-import { graphql, StaticQuery, useStaticQuery } from "gatsby";
+import { graphql, StaticQuery } from "gatsby";
 
 class Jomis extends React.Component {
     render() {

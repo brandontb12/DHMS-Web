@@ -49,6 +49,11 @@
 			height: 50%;
 		}
 
+		.tile-blog-section {
+			width: 100%;
+			height: 75%;
+		}
+
 		.tile-jomis-overview {
 			width: 100%;
 			height: 150%;
@@ -179,6 +184,81 @@
 					font-size: 6vh;
 					padding: 0;
 					margin: 0;
+				}
+			}
+
+			.blog-section {
+				width: 100%;
+				height: 50vh;
+
+				.blog-text-left {
+					width: 50%;
+					height: 50vh;
+					display: inline-block;
+
+					h3 {
+						text-align: left;
+						color: rgb(45, 78, 107);
+						font-family: 'Candara';
+						font-weight: bold;
+						font-size: 5vh;
+						padding: 0;
+						margin: 0;
+						margin-left: 5%;
+					}
+					h2 {
+						text-align: left;
+						color: rgb(56, 56, 56);
+						font-family: 'Candara';
+						font-size: 2.5vh;
+						padding: 0;
+						margin: 0;
+						margin-left: 5%;
+						margin-right: 25%;
+					}
+				}
+
+				.blog-text-right {
+					width: 50%;
+					height: 50vh;
+					display: inline-block;
+
+					h3 {
+						text-align: left;
+						color: rgb(45, 78, 107);
+						font-family: 'Candara';
+						font-weight: bold;
+						font-size: 5vh;
+						padding: 0;
+						margin: 0;
+						margin-left: 5%;
+					}
+					h2 {
+						text-align: left;
+						color: rgb(56, 56, 56);
+						font-family: 'Candara';
+						font-size: 2.5vh;
+						padding: 0;
+						margin: 0;
+						margin-left: 5%;
+						margin-right: 25%;
+					}
+				}
+
+				.img-right {
+					width: 50%;
+					height: 100%;
+					float: right;
+				}
+				
+				.img-left {
+					width: 50%;
+					height: 100%;
+					float: left;
+				}
+
+				.actual-img {
+					height: 100%;
 				}
 			}
 
