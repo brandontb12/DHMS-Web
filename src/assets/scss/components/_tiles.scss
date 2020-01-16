@@ -19,6 +19,11 @@
 			width: 40%
 		}
 
+		.tile-home-pic {
+			width: 100%;
+			height: 100vh;
+		}
+
 		.tile-tag-line {
 			width: 100%;
 			height: 60vh;
@@ -37,6 +42,11 @@
 		.tile-jomis-tag-line {
 			width: 100%;
 			height: 50vh;
+		}
+
+		.tile-blog-tag {
+			width: 100%;
+			height: 50%;
 		}
 
 		.tile-jomis-overview {
@@ -155,6 +165,20 @@
 					float: right;
 					margin-right: 5%;
 					margin-top: 12%;
+				}
+			}
+
+			.blog-tag {
+				width: 100%;
+				height: 75%;
+				h3 {
+					text-align: center;
+					color: white;
+					font-family: 'Candara';
+					font-weight: bold;
+					font-size: 6vh;
+					padding: 0;
+					margin: 0;
 				}
 			}
 

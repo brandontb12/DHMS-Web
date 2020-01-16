@@ -37,7 +37,7 @@ class HomeContent extends React.Component {
                 </Helmet>
                 <div id="main">
                     <section id="one" className="tiles">
-                        <BackgroundImage fluid={this.props.data.dhmsflag.childImageSharp.fluid} className="tile-40">
+                        <BackgroundImage fluid={this.props.data.dhmsflag.childImageSharp.fluid} className="tile-home-pic">
                             <article className="tile-accent-1">
                                     <header>
                                         <h2>CUSTOMER-FOCUSED QUALITY-DRIVEN HEALTHCARE MARKETING</h2>

@@ -11,22 +11,20 @@ const BlogLandingContent = ({ props, data }) => {
 
         <Layout>
             <Helmet>
-                <title>Blogs - Forty by HTML5 UP</title>
+                <title>Blogs</title>
                 <meta name="description" content="Blogs" />
+                <html lang="en"/>
             </Helmet>
 
-            <BannerLanding title="Blogs" />
+            {/* <BannerLanding title="Blogs" /> */}
 
             <div id="main">
-                <section id="one">
-                    <div className="inner">
-                        <header className="major">
-                            <h2>Sed amet aliquam</h2>
-                        </header>
-                        <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna.
-                        Maecenas massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero.
-                        Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna.</p>
-                    </div>
+                <section id="one" className="tiles">
+                    <article className="tile-accent-2 tile-blog-tag dark-background">
+                        <div className="blog-tag">
+                            <h3>DEFENSE HEALTHCARE MANAGEMENT SYSTEMS</h3>
+                        </div>
+                    </article>
                 </section>
                 <section id="two" className="spotlights">
                     {edges.map(({ node }) => (
