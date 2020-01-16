@@ -22,13 +22,13 @@ class JomisLanding extends React.Component {
             <div id="main">
                 <section id="one" className="tiles">
                     <article className="tile-accent-2 tile-jomis-tag-line dark-background">
-                        <header className="jomis-tag">
+                        <div className="jomis-tag">
                             <h3>JOINT OPERATIONAL MEDICINE INFORMATION SYSTEMS</h3>
                             <h3>PROGRAM MANAGEMENT OFFICE</h3>
-                            <BackgroundImage fluid={this.props.data.background.childImageSharp.fluid} className="background-img">
+                            <BackgroundImage fluid={this.props.data.logo3.childImageSharp.fluid} className="background-img">
                                 <Img fluid={this.props.data.logo2.childImageSharp.fluid} className="logo-img"/>
                             </BackgroundImage>
-                        </header>
+                        </div>
                     </article>
                     <article className="tile-accent-2 tile-jomis-overview light-background">
                         <header className="jomis-overview">
@@ -51,20 +51,6 @@ class JomisLanding extends React.Component {
 export default () => {
     const data = useStaticQuery(graphql `
         query {
-            background: file(base: { eq: "jomisbackground.png" }) {
-                childImageSharp {
-                  fluid {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-            }
-            logo: file(base: { eq: "jomislogo1.png" }) {
-                childImageSharp {
-                  fluid {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-            }
             ship: file(base: { eq: "jomisboat.png" }) {
                 childImageSharp {
                   fluid {
@@ -73,6 +59,13 @@ export default () => {
                 }
             }
             logo2: file(base: { eq: "jomislogo2.png" }) {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+            }
+            logo3: file(base: { eq: "jomoslogo3.png" }) {
                 childImageSharp {
                   fluid {
                     ...GatsbyImageSharpFluid
