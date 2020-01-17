@@ -37,108 +37,96 @@ class HomeContent extends React.Component {
                 </Helmet>
                 <div id="main">
                     <section id="one" className="tiles">
-                        <BackgroundImage fluid={this.props.data.dhmsflag.childImageSharp.fluid} className="tile-home-pic">
-                            <article className="tile-accent-1">
-                                    <header>
-                                        <h2>CUSTOMER-FOCUSED QUALITY-DRIVEN HEALTHCARE MARKETING</h2>
-                                        <h3>Defense Healthcare Management Systems</h3>
-                                    </header>
-                            </article>
-                        </BackgroundImage>
-                        <article className="tile-accent-2 tile-tag-line light-background">
-                            <header className="tag-line">
-                                <h3>DEDICATED TO YOUR ONLINE SUCCESS</h3>
-                                <br/>
-                                <h2>The Program Executive Office, Defense Healthcare Management Systems (PEO DHMS) was chartered to transform the delivery of healthcare and advance data sharing for service members, veterans, and their families. PEO DHMS is an acquisition organization with a direct reporting relationship to the Office of the Under Secretary of Defense for Acquisition and Sustainment (OUSD(A&S)), and administratively attached to the Defense Health Agency.</h2>
-                            </header>
-                        </article>
+                        <div className="tile-home">
+                            <Img fluid={this.props.data.dhmsflag.childImageSharp.fluid} className="tile-home-pic"/>
+                            <div className="tile-home-text light-background">
+                                <div className="org-row">
+                                    <div className="tile-home-half-section">
+                                        <h3>WHO ARE WE?</h3>
+                                        <h2>ABOUT</h2>
+                                        <h3>WHAT IS OUR GOAL?</h3>
+                                    </div>
+                                    <div className="tile-home-half-section">
+                                        <h1>The Defense Healthcare Management System (DHMS) Program Executive Office (PEO) was chartered to transform the delivery of healthcare and advance data sharing through a modernized electronic health record (EHR) for service members, veterans, and their families.</h1>
+                                    </div>
+                                    <div className="tile-home-half-section">
+                                        <h1>The Defense Healthcare Management System (DHMS) Program Executive Office (PEO) was chartered to transform the delivery of healthcare and advance data sharing through a modernized electronic health record (EHR) for service members, veterans, and their families.</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <article className="tile-accent-2 tile-orgs light-background">
                             <header className="orgs">
-                                <h3>PEOPLE DRESS TO IMPRESS.</h3>
-                                <h3>WE WEB DESIGN BUSINESS IN SUCCESS</h3>
                                 <div className="org-row">
-                                    <Link to="/blog_landing" className="link primary" aria-label="Blog">
+                                    <Link to="/contracting" className="link primary" aria-label="Blog">
                                         <div className="org-column">
                                             <Img fluid={this.props.data.blog.childImageSharp.fluid} className="org-img"/>
-                                            <h3>Blogs</h3>
-                                            <h2>Latest Available News</h2>
+                                            <h3>Contracting Division</h3>
                                         </div>
                                     </Link>
                                     <Link to="/contracts" className="link primary" aria-label="Contracts">
                                         <div className="org-column">
-                                            <Img fluid={this.props.data.contract.childImageSharp.fluid} className="org-img"/>
-                                            <h3>Contracts</h3>
-                                            <h2>Start Ups, Business, Development</h2>
-                                        </div>
-                                    </Link>
-                                    <Link to="/organization" className="link primary" aria-label="Organizations">
-                                        <div className="org-column">
                                             <Img fluid={this.props.data.overview.childImageSharp.fluid} className="org-img"/>
-                                            <h3>Organizations</h3>
-                                            <h2>Start Ups, Business, Development</h2>
+                                            <h3>Resources</h3>
                                         </div>
                                     </Link>
+                                    <div className="org-column-text">
+                                        <h1>FIND OUT MORE</h1>
+                                        <h2>CONNECT</h2>
+                                        <h5>WITH US</h5>
+                                        <h4>BECOME PART OF THE TEAM</h4>
+                                        <h5></h5>
+                                    </div>
                                 </div>
                                 <div className="org-row" style={{marginTop:"5vh"}}>
                                     <Link to="/dhmsm" className="link primary" aria-label="Blog">
                                         <div className="org-column">
-                                            <Img fluid={this.props.data.jomis.childImageSharp.fluid} className="org-img"/>
-                                            <h3>DHMSM</h3>
-                                            <h2>Start Ups, Business, Development</h2>
-                                        </div>
-                                    </Link>
-                                    <Link to="/jomis" className="link primary" aria-label="Opportunities">
-                                        <div className="org-column">
-                                            <Img fluid={this.props.data.modern.childImageSharp.fluid} className="org-img"/>
-                                            <h3>JOMIS</h3>
-                                            <h2>Start Ups, Business, Development</h2>
-                                        </div>
-                                    </Link>
-                                    <Link to="/conferences" className="link primary" aria-label="Organizations">
-                                        <div className="org-column">
                                             <Img fluid={this.props.data.dodflag.childImageSharp.fluid} className="org-img"/>
-                                            <h3>Conferences</h3>
-                                            <h2>Start Ups, Business, Development</h2>
+                                            <h3>Calendar</h3>
+                                        </div>
+                                    </Link>
+                                    <Link to="/blog_landing" className="link primary" aria-label="Opportunities">
+                                        <div className="org-column">
+                                            <Img fluid={this.props.data.contract.childImageSharp.fluid} className="org-img"/>
+                                            <h3>Blog</h3>
                                         </div>
                                     </Link>
                                 </div>
                             </header>
                         </article>
-                        {/* <BackgroundImage fluid={this.props.data.contract.childImageSharp.fluid} className="tile-60">
-                            <article className="tile-accent-2">
-                                    <header className="major">
-                                    <h3 className="contract-header" >CONTRACT WITH US</h3>
-                                    <div className="contract-link">
-                                        <Link className="button contract" to="/organization" aria-label="Organizations">Organizations</Link>
-                                        <Link className="button contract" to="/opportunities" aria-label="Opportunities">Opportunities</Link>
-                                        <Link className="button contract" to="/conferences" aria-label="Conferences">Conferences</Link>
-                                        <Link className="button contract" to="/training_workshops" aria-label="Training and Workshops">Training and Workshops</Link>
-                                        <Link className="button contract" to="/publication" aria-label="Publications">Publications</Link>
-                                        <Link className="button contract" to="/blog_landing" aria-label="Blog">Blog</Link>
-                                    </div>
-                                </header>
-                            </article>
-                        </BackgroundImage>
-                        <BackgroundImage fluid={this.props.data.overview.childImageSharp.fluid} className="tile-60">
-                            <article className="tile-accent-3">
-                                <header className="major">
-                                    <h3 className="contract-header">Program Overview</h3>
-                                    <h2>PEO DHMS is an acquisition organization with a direct reporting relationship to the Office of the Under Secretary of Defense for Acquisition and Sustainment (OUSD(A&S)), and administratively attached to the Defense Health Agency.</h2>
-                                </header>
-                                <Link to="/landing" className="link primary" aria-label="landing"></Link>
-                            </article>
-                        </BackgroundImage>
-                        <BackgroundImage fluid={this.props.data.blog.childImageSharp.fluid} className="tile-40">
-                            <article className="tile-accent-4">
-                                <header className="major">
-                                    <h3 className="contract-header">Blogs</h3>
-                                    <h2 className="blog-info">Visit our blog page for all up to date news regarding DHMS</h2>
-                                </header>
-                                <Link to="/blog_landing" className="link primary" aria-label="Blog"></Link>
-                            </article>
-                        </BackgroundImage> */}
+                        <div className="tile-support-container light-background">
+                            <div className="tile-support-text-column">
+                                <h1>INFORMATION SYSTEMS</h1>
+                                <h2>WHO WE</h2>
+                                <h3>SUPPORT</h3>
+                                <h4>HEALTHCARE MODERNIZATION</h4>
+                            </div>
+                            <div className="tile-support-link-column">
+                                <div className="support-link">
+                                    <Link to="/jomis" className="link primary" aria-label="jomis">
+                                        <BackgroundImage fluid={this.props.data.jomislogo.childImageSharp.fluid} className="support-link-image">
+                                            <h1 className="jomis-link-text">Joint Operational Medicine Information Systems Program Management Office</h1>
+                                        </BackgroundImage>
+                                    </Link>
+                                </div>
+                                <div className="support-link support-link-two">
+                                    <Link to="/dhmsm" className="link primary" aria-label="jomis">
+                                        <BackgroundImage fluid={this.props.data.ship.childImageSharp.fluid} className="support-link-image">
+                                            <h1 className="jomis-link-text">DoD Healthcare Management System Modernization Program Management Office</h1>
+                                        </BackgroundImage>
+                                    </Link>
+                                </div>
+                                <div className="support-link support-link-three">
+                                    <Link to="/dhmsm" className="link primary" aria-label="jomis">
+                                        <BackgroundImage fluid={this.props.data.dhmsflag.childImageSharp.fluid} className="support-link-image">
+                                            <h1 className="jomis-link-text">Place Holder Text</h1>
+                                        </BackgroundImage>
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
                     </section>
-                    <section id="two" className="tiles">
+                    {/* <section id="two" className="tiles">
                         <article className="tile-accent-2 tile-vids dark-background">
                             <div className="vids">
                                 <div className="vid-row">
@@ -157,7 +145,7 @@ class HomeContent extends React.Component {
                                 </div>
                             </div>
                         </article>
-                    </section>
+                    </section> */}
                 </div>
                 <Contact/>
             </Layout>
@@ -169,6 +157,13 @@ export default () => {
     const data = useStaticQuery(graphql `
         query {
             dhmsflag: file(base: { eq: "dhmsflag.jpg" }) {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+            }
+            dhmsflag1: file(base: { eq: "dhmsflag1.jpg" }) {
                 childImageSharp {
                   fluid {
                     ...GatsbyImageSharpFluid
@@ -218,6 +213,20 @@ export default () => {
                 }
             }
             homelogo: file(base: { eq: "homeicon.jpg" }) {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+            }
+            jomislogo: file(base: { eq: "jomoslogo3.png" }) {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+            }
+            ship: file(base: { eq: "cleanship.png" }) {
                 childImageSharp {
                   fluid {
                     ...GatsbyImageSharpFluid

@@ -19,9 +19,46 @@
 			width: 40%
 		}
 
-		.tile-home-pic {
+		.tile-home {
 			width: 100%;
 			height: 100vh;
+		}
+
+		.tile-home-pic {
+			width: 100%;
+			height: 70%;
+		}
+
+		.tile-home-text {
+			height: 30%;
+		}
+
+		.tile-home-half-section {
+			float: left;
+			width: 33%;
+			padding: 1%;
+			h3 {
+				color: black;
+				font-family: 'Raleway';
+				letter-spacing: .5vw;
+				text-align: center;
+				vertical-align: middle;
+			}
+			h2 {
+				color: black;
+				font-family: 'Raleway';
+				letter-spacing: .5vw;
+				text-align: center;
+				vertical-align: middle;
+				font-size: 5vh;
+			}
+			h1 {
+				color: black;
+				font-family: 'Raleway';
+				text-align: left;
+				vertical-align: middle;
+				font-size: 2.5vh;
+			}
 		}
 
 		.tile-tag-line {
@@ -31,7 +68,81 @@
 
 		.tile-orgs {
 			width: 100%;
-			height: 110vh;
+			height: 120vh;
+		}
+
+		.tile-support-container {
+			width: 100%;
+			height: 120vh;
+		}
+
+		.tile-support-text-column {
+			width: 40%;
+			height: 100%;
+			margin-top: 15%;
+			float: left;
+
+			h1 {
+				text-align: center;
+				color: black;
+				font-family: 'Raleway';
+				font-size: 3vh;
+			}
+
+			h2 {
+				text-align: center;
+				color: black;
+				font-family: 'Raleway';
+				font-size: 12vh;
+			}
+
+			h3 {
+				text-align: center;
+				color: black;
+				font-family: 'Raleway';
+				font-size: 12vh;
+				margin-top: -25%;
+			}
+
+			h4 {
+				text-align: center;
+				color: black;
+				font-family: 'Raleway';
+				font-size: 3vh;
+				margin-top: -11%;
+			}
+		}
+
+		.tile-support-link-column {
+			width: 50%;
+			height: 100%;
+			margin-left: 45%;
+			margin-top: 5%;
+		}
+
+		.support-link {
+			position: absolute;
+			height: 30%;
+		}
+
+		.support-link-image {
+			height: 25vh;
+			width: 50vw;
+		}
+
+		.support-link-two {
+			margin-top: 15%;
+		}
+
+		.support-link-three {
+			margin-top: 30%;
+		}
+
+		.jomis-link-text {
+			color: white;
+			font-family: 'Raleway';
+			font-size: 3vh;
+			text-align: center;
 		}
 
 		.tile-vids {
@@ -135,8 +246,8 @@
 					font-weight: 100;
 					font-size: 3vh;
 				}
-				margin-left: 15vw;
-				margin-right: 15vw;
+				margin-left: 5vw;
+				margin-right: 5vw;
 			}
 
 			.jomis-tag {
@@ -292,33 +403,96 @@
 				clear: both;
 				display: table;
 				width: 100%;
+				margin-top: 10%;
 			}
 
 			.org-column {
 				float: left;
-				width: 33%;
+				width: 30%;
 				padding: 1%;
-				height: 50%;
 
 				h3 {
 					text-align: center;
 					color: black;
-					font-family: 'Candara';
+					font-family: 'Raleway';
 					font-weight: bold;
 					font-size: 3vh;
-					letter-spacing: .5vw;
 					padding: 0;
 					margin: 0;
 				}
 				h2 {
+					margin-left: 15%;
+					margin-top: 5%;
 					text-align: center;
-					color: rgb(87, 78, 78);
-					font-family: 'Candara';
-					font-weight: 100;
-					font-size: 2.5vh;
+					color: black;
+					font-family: 'Raleway';
+					font-weight: bold;
+					font-size: 6vh;
+				}
+				h1 {
+					margin-left: 15%;
+					margin-top: 5%;
+					text-align: center;
+					color: black;
+					font-family: 'Raleway';
+					font-size: 3vh;
+				}
+			}
+
+			.org-column-text {
+				float: left;
+				width: 40%;
+				position: absolute;
+				margin-left: 52%;
+
+				h3 {
+					text-align: center;
+					color: black;
+					font-family: 'Raleway';
+					font-weight: bold;
+					font-size: 3vh;
 					padding: 0;
 					margin: 0;
 				}
+				h2 {
+					margin-left: 15%;
+					text-align: center;
+					color: black;
+					font-family: 'Raleway';
+					font-weight: bold;
+					font-size: 12vh;
+				}
+				h1 {
+					margin-left: 15%;
+					margin-top: 25%;
+					text-align: center;
+					color: black;
+					font-family: 'Raleway';
+					font-size: 3vh;
+					letter-spacing: .5vw;
+				}
+				h4 {
+					margin-left: 15%;
+					margin-top: -11%;
+					text-align: center;
+					color: black;
+					font-family: 'Raleway';
+					font-size: 3vh;
+					letter-spacing: .5vw;
+				}
+				h5 {
+					margin-left: 15%;
+					margin-top: -22%;
+					text-align: center;
+					color: black;
+					font-family: 'Raleway';
+					font-weight: bold;
+					font-size: 12vh;
+				}
+			}
+
+			.org-blank {
+				width: 15%;
 			}
 
 			.vids {
