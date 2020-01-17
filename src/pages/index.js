@@ -4,7 +4,6 @@ import { graphql, StaticQuery } from "gatsby";
 
 class HomeIndex extends React.Component {
     render() {
-
         return (
             <StaticQuery
                 query={graphql`

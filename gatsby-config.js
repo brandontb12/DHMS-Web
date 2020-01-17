@@ -2,9 +2,9 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter - Forty V2",
-    author: "Hunter Chang",
-    description: "A Gatsby.js V2 Starter based on Forty by HTML5 UP"
+    title: "Defense Health Management System",
+    author: "Frontier Technology Inc",
+    description: ""
   },
   pathPrefix: process.env.BASEURL || '/',
   plugins: [
@@ -34,6 +34,18 @@ module.exports = {
            name: `images`,
            path: `${__dirname}/src/assets/images`
        }
+    },
+    {
+      resolve: `gatsby-transformer-sharp`
+    },
+    {
+      resolve: `gatsby-plugin-sharp`
+    },
+    {
+      resolve: 'gatsby-background-image',
+      options: {
+        specialChars: '/:',
+      },
     },
     'gatsby-transformer-remark',
     'gatsby-plugin-sass',
