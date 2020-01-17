@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
@@ -33,22 +34,22 @@ class HomeContent extends React.Component {
                         { name: 'keywords', content: 'sample, something' },
                     ]}
                 >
-                    <html lang="en"/>
+                    <html lang="en" />
                 </Helmet>
                 <div id="main">
                     <section id="one" className="tiles">
                         <BackgroundImage fluid={this.props.data.dhmsflag.childImageSharp.fluid} className="tile-home-pic">
                             <article className="tile-accent-1">
-                                    <header>
-                                        <h2>CUSTOMER-FOCUSED QUALITY-DRIVEN HEALTHCARE MARKETING</h2>
-                                        <h3>Defense Healthcare Management Systems</h3>
-                                    </header>
+                                <header>
+                                    <h2>CUSTOMER-FOCUSED QUALITY-DRIVEN HEALTHCARE MARKETING</h2>
+                                    <h3>Defense Healthcare Management Systems</h3>
+                                </header>
                             </article>
                         </BackgroundImage>
                         <article className="tile-accent-2 tile-tag-line light-background">
                             <header className="tag-line">
                                 <h3>DEDICATED TO YOUR ONLINE SUCCESS</h3>
-                                <br/>
+                                <br />
                                 <h2>The Program Executive Office, Defense Healthcare Management Systems (PEO DHMS) was chartered to transform the delivery of healthcare and advance data sharing for service members, veterans, and their families. PEO DHMS is an acquisition organization with a direct reporting relationship to the Office of the Under Secretary of Defense for Acquisition and Sustainment (OUSD(A&S)), and administratively attached to the Defense Health Agency.</h2>
                             </header>
                         </article>
@@ -59,44 +60,44 @@ class HomeContent extends React.Component {
                                 <div className="org-row">
                                     <Link to="/blog_landing" className="link primary" aria-label="Blog">
                                         <div className="org-column">
-                                            <Img fluid={this.props.data.blog.childImageSharp.fluid} className="org-img"/>
+                                            <Img fluid={this.props.data.blog.childImageSharp.fluid} className="org-img" />
                                             <h3>Blogs</h3>
                                             <h2>Latest Available News</h2>
                                         </div>
                                     </Link>
                                     <Link to="/contracts" className="link primary" aria-label="Contracts">
                                         <div className="org-column">
-                                            <Img fluid={this.props.data.contract.childImageSharp.fluid} className="org-img"/>
+                                            <Img fluid={this.props.data.contract.childImageSharp.fluid} className="org-img" />
                                             <h3>Contracts</h3>
                                             <h2>Start Ups, Business, Development</h2>
                                         </div>
                                     </Link>
                                     <Link to="/organization" className="link primary" aria-label="Organizations">
                                         <div className="org-column">
-                                            <Img fluid={this.props.data.overview.childImageSharp.fluid} className="org-img"/>
+                                            <Img fluid={this.props.data.overview.childImageSharp.fluid} className="org-img" />
                                             <h3>Organizations</h3>
                                             <h2>Start Ups, Business, Development</h2>
                                         </div>
                                     </Link>
                                 </div>
-                                <div className="org-row" style={{marginTop:"5vh"}}>
+                                <div className="org-row" style={{ marginTop: "5vh" }}>
                                     <Link to="/dhmsm" className="link primary" aria-label="Blog">
                                         <div className="org-column">
-                                            <Img fluid={this.props.data.jomis.childImageSharp.fluid} className="org-img"/>
+                                            <Img fluid={this.props.data.jomis.childImageSharp.fluid} className="org-img" />
                                             <h3>DHMSM</h3>
                                             <h2>Start Ups, Business, Development</h2>
                                         </div>
                                     </Link>
                                     <Link to="/jomis" className="link primary" aria-label="Opportunities">
                                         <div className="org-column">
-                                            <Img fluid={this.props.data.modern.childImageSharp.fluid} className="org-img"/>
+                                            <Img fluid={this.props.data.modern.childImageSharp.fluid} className="org-img" />
                                             <h3>JOMIS</h3>
                                             <h2>Start Ups, Business, Development</h2>
                                         </div>
                                     </Link>
                                     <Link to="/conferences" className="link primary" aria-label="Organizations">
                                         <div className="org-column">
-                                            <Img fluid={this.props.data.dodflag.childImageSharp.fluid} className="org-img"/>
+                                            <Img fluid={this.props.data.dodflag.childImageSharp.fluid} className="org-img" />
                                             <h3>Conferences</h3>
                                             <h2>Start Ups, Business, Development</h2>
                                         </div>
@@ -145,13 +146,13 @@ class HomeContent extends React.Component {
                                     <div className="vid-column">
                                         <h2>FTI Congressional SBIR Hearing</h2>
                                         <video controls>
-                                            <source src={CongressVideo} type="video/webm"/>
+                                            <source src={CongressVideo} type="video/webm" />
                                         </video>
                                     </div>
                                     <div className="vid-column">
                                         <h2>FTI Overview</h2>
                                         <video controls>
-                                            <source src={OverviewVideo} type="video/webm"/>
+                                            <source src={OverviewVideo} type="video/webm" />
                                         </video>
                                     </div>
                                 </div>
@@ -159,14 +160,14 @@ class HomeContent extends React.Component {
                         </article>
                     </section>
                 </div>
-                <Contact/>
+                <Contact />
             </Layout>
         );
     }
 }
 
 export default () => {
-    const data = useStaticQuery(graphql `
+    const data = useStaticQuery(graphql`
         query {
             dhmsflag: file(base: { eq: "dhmsflag.jpg" }) {
                 childImageSharp {
@@ -226,7 +227,9 @@ export default () => {
             }
         }
     `)
+
     return (
-        <HomeContent data={data}/>
+
+        <HomeContent data={data} />
     )
 }

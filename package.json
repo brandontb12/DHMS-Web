@@ -37,6 +37,7 @@
     "federalist": "gatsby build --prefix-paths && mkdir -p _site && rm -rf _site/* && cp -r public/* _site/"
   },
   "devDependencies": {
+    "gatsby-cli": "^2.8.20",
     "prettier": "^1.18.2"
   },
   "repository": {

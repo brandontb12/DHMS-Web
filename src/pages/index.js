@@ -8,17 +8,24 @@ class HomeIndex extends React.Component {
             <StaticQuery
                 query={graphql`
                     query {
-                      allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
-                        edges {
-                          node {
-                            frontmatter {
-                              title
-                              date(formatString: "MMM Do, YYYY")
+                        allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
+                            edges {
+                                node {
+                                    frontmatter {
+                                        title
+                                        date(formatString: "MMM Do, YYYY")
+                                    }
+                                    excerpt(pruneLength:150)
+                                }
                             }
-                            excerpt(pruneLength:150)
-                          }
                         }
-                      }
+                        flagPic: file(relativePath: { eq: "DHMSFlag.jpg" }) {
+                            childImageSharp {
+                                fluid {
+                                    ...GatsbyImageSharpFluid       
+                                }
+                            }
+                        }
                     }
                 `}
                 render={data => (
