@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
+import BackgroundImage from 'gatsby-background-image';
 
 import pic03 from '../assets/images/pic03.jpg';
 import pic04 from '../assets/images/pic04.jpg';
@@ -9,6 +10,16 @@ import pic05 from '../assets/images/pic05.jpg';
 import pic06 from '../assets/images/pic06.jpg';
 import contractPic from '../assets/images/contract.jpg';
 import flagPic from '../assets/images/DHMSFlag.jpg';
+
+//<article style={{ backgroundImage: `url(${flagPic})` }}>
+//    <header className="major">
+//        <h3>Defense Healthcare Management Systems</h3>
+//        <br />
+//        <h2>The Program Executive Office, Defense Healthcare Management Systems (PEO DHMS) was chartered to transform the delivery of healthcare and advance
+//                                    data sharing for service members, veterans, and their families.</h2>
+//    </header>
+//    <Link to="/landing" className="link primary"></Link>
+//</article>
 
 class HomeContent extends React.Component {
     constructor(props) {
@@ -34,10 +45,11 @@ class HomeContent extends React.Component {
                                 <h3>Defense Healthcare Management Systems</h3>
                                 <br />
                                 <h2>The Program Executive Office, Defense Healthcare Management Systems (PEO DHMS) was chartered to transform the delivery of healthcare and advance
-                                    data sharing for service members, veterans, and their families.</h2>
+                                                            data sharing for service members, veterans, and their families.</h2>
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
+                        
                         <article style={{ backgroundImage: `url(${contractPic})` }}>
                             <header className="major">
                                 <h3 className="contract-header" >CONTRACT. WITH. US.</h3>
