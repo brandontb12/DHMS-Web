@@ -3,13 +3,9 @@ import { Link, useStaticQuery, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import Img from "gatsby-image";
-import BannerLanding from '../components/BannerLanding';
+// import BannerLanding from '../components/BannerLanding';
 
 class BlogLandingContent extends React.Component  {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <Layout>

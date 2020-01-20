@@ -1,8 +1,7 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 import '../assets/scss/main.scss'
-import Header from './Header'
+// import Header from './Header'
 import Menu from './Menu'
 import Footer from './Footer'
 

@@ -6,10 +6,6 @@ import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 
 class JomisLanding extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <Layout>

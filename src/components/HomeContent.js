@@ -3,21 +3,8 @@ import { Link, useStaticQuery, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import Img from "gatsby-image";
-import backgroundImage from 'gatsby-background-image';
-
-import pic03 from '../assets/images/pic03.jpg';
-import pic04 from '../assets/images/pic04.jpg';
-import pic05 from '../assets/images/pic05.jpg';
-import pic06 from '../assets/images/pic06.jpg';
-import contractPic from '../assets/images/contract.jpg';
-import flagPic from '../assets/images/dhmsflag.jpg';
-import overviewPic from '../assets/images/overview.jpg'
-import blogPic from '../assets/images/blog.jpg'
-import ipopic from '../assets/images/dodva.jpg'
 import BackgroundImage from 'gatsby-background-image';
-import CongressVideo from '../assets/videos/FTICongress.webm'
-import OverviewVideo from '../assets/videos/FTIOverview.webm'
-import Contact from './Contact'
+import Contact from './Contact';
 
 class HomeContent extends React.Component {
     constructor(props) {
@@ -39,7 +26,7 @@ class HomeContent extends React.Component {
                     <section id="one" className="tiles">
                         <div className="tile-home">
                             <Img fluid={this.props.data.dhmsflag.childImageSharp.fluid} className="tile-home-pic"/>
-                            <div className="tile-home-text light-background">
+                            {/* <div className="tile-home-text light-background">
                                 <div className="org-row">
                                     <div className="tile-home-half-section">
                                         <h3>WHO ARE WE?</h3>
@@ -53,14 +40,29 @@ class HomeContent extends React.Component {
                                         <h1>The Defense Healthcare Management System (DHMS) Program Executive Office (PEO) was chartered to transform the delivery of healthcare and advance data sharing through a modernized electronic health record (EHR) for service members, veterans, and their families.</h1>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
+                        <article className="tile-home-tag-line light-background">
+                            <div className="org-row">
+                                <div className="tile-home-half-section">
+                                    <h3>WHO WE ARE</h3>
+                                    <h2>ABOUT</h2>
+                                    <h3>UNDERSTAND OUR GOAL</h3>
+                                </div>
+                                <div className="tile-home-half-section">
+                                    <h1>The Defense Healthcare Management System (DHMS) Program Executive Office (PEO) was chartered to transform the delivery of healthcare and advance data sharing through a modernized electronic health record (EHR) for service members, veterans, and their families.</h1>
+                                </div>
+                                <div className="tile-home-half-section">
+                                    <h1>The Defense Healthcare Management System (DHMS) Program Executive Office (PEO) was chartered to transform the delivery of healthcare and advance data sharing through a modernized electronic health record (EHR) for service members, veterans, and their families.</h1>
+                                </div>
+                            </div>
+                        </article>
                         <article className="tile-accent-2 tile-orgs light-background">
                             <header className="orgs">
                                 <div className="org-row">
                                     <Link to="/contracting" className="link primary" aria-label="Blog">
                                         <div className="org-column">
-                                            <Img fluid={this.props.data.blog.childImageSharp.fluid} className="org-img"/>
+                                            <Img fluid={this.props.data.contractdivision.childImageSharp.fluid} className="org-img"/>
                                             <h3>Contracting Division</h3>
                                         </div>
                                     </Link>
@@ -81,13 +83,13 @@ class HomeContent extends React.Component {
                                 <div className="org-row" style={{marginTop:"5vh"}}>
                                     <Link to="/dhmsm" className="link primary" aria-label="Blog">
                                         <div className="org-column">
-                                            <Img fluid={this.props.data.dodflag.childImageSharp.fluid} className="org-img"/>
+                                            <Img fluid={this.props.data.calendar.childImageSharp.fluid} className="org-img"/>
                                             <h3>Calendar</h3>
                                         </div>
                                     </Link>
                                     <Link to="/blog_landing" className="link primary" aria-label="Opportunities">
                                         <div className="org-column">
-                                            <Img fluid={this.props.data.contract.childImageSharp.fluid} className="org-img"/>
+                                            <Img fluid={this.props.data.blog.childImageSharp.fluid} className="org-img"/>
                                             <h3>Blog</h3>
                                         </div>
                                     </Link>
@@ -96,7 +98,7 @@ class HomeContent extends React.Component {
                         </article>
                         <div className="tile-support-container light-background">
                             <div className="tile-support-text-column">
-                                <h1>INFORMATION SYSTEMS</h1>
+                                <h1>PATIENT FOCUSED HEALTH CARE</h1>
                                 <h2>WHO WE</h2>
                                 <h3>SUPPORT</h3>
                                 <h4>HEALTHCARE MODERNIZATION</h4>
@@ -119,9 +121,29 @@ class HomeContent extends React.Component {
                                 <div className="support-link support-link-three">
                                     <Link to="/dhmsm" className="link primary" aria-label="jomis">
                                         <BackgroundImage fluid={this.props.data.dhmsflag.childImageSharp.fluid} className="support-link-image">
-                                            <h1 className="jomis-link-text">Place Holder Text</h1>
+                                            <h1 className="jomis-link-text">Federal Electronic Health Record Modernization</h1>
                                         </BackgroundImage>
                                     </Link>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="tile-opportunity-container light-background">
+                            <div className="opportunity-row">
+                                <div className="opportunity-column">
+                                    <Img fluid={this.props.data.health.childImageSharp.fluid} className="org-img"/>
+                                    <h1>Women's Health</h1>
+                                    <h2>While women and men have many of the same health issues, women may be affected differently than men. In addition, there are some conditions which are unique to women. Familiarity with women's health issues, regualr screenings and prevention are keys to maintaining good health...</h2>
+                                </div>
+                                <div className="opportunity-column">
+                                <Img fluid={this.props.data.health.childImageSharp.fluid} className="org-img"/>
+                                    <h1>Women's Health</h1>
+                                    <h2>While women and men have many of the same health issues, women may be affected differently than men. In addition, there are some conditions which are unique to women. Familiarity with women's health issues, regualr screenings and prevention are keys to maintaining good health...</h2>
+                                </div>
+                                <div className="opportunity-text-column">
+                                    <h3>NEWS</h3>
+                                    <h4>STAY UP</h4>
+                                    <h5>TO DATE</h5>
+                                    <h6>OPPORTUNITIES</h6>
                                 </div>
                             </div>
                         </div>
@@ -184,7 +206,14 @@ export default () => {
                   }
                 }
             }
-            blog: file(base: { eq: "blog.jpg" }) {
+            contractdivision: file(base: { eq: "blog.jpg" }) {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+            }
+            blog: file(base: { eq: "computerblog.jpg" }) {
                 childImageSharp {
                   fluid {
                     ...GatsbyImageSharpFluid
@@ -227,6 +256,20 @@ export default () => {
                 }
             }
             ship: file(base: { eq: "cleanship.png" }) {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+            }
+            health: file(base: { eq: "womenhealthpic.png" }) {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+            }
+            calendar: file(base: { eq: "calendar.jpg" }) {
                 childImageSharp {
                   fluid {
                     ...GatsbyImageSharpFluid
