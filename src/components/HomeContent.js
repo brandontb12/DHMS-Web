@@ -25,7 +25,7 @@ class HomeContent extends React.Component {
                 <div id="main">
                     <section id="one" className="tiles">
                         <div className="tile-home">
-                            <Img fluid={this.props.data.dhmsflag.childImageSharp.fluid} className="tile-home-pic"/>
+                            <Img fluid={this.props.data.head.childImageSharp.fluid} className="tile-home-pic"/>
                             {/* <div className="tile-home-text light-background">
                                 <div className="org-row">
                                     <div className="tile-home-half-section">
@@ -42,18 +42,17 @@ class HomeContent extends React.Component {
                                 </div>
                             </div> */}
                         </div>
-                        <article className="tile-home-tag-line light-background">
-                            <div className="org-row">
-                                <div className="tile-home-half-section">
-                                    <h3>WHO WE ARE</h3>
-                                    <h2>ABOUT</h2>
-                                    <h3>UNDERSTAND OUR GOAL</h3>
+                        <article className="light-background">
+                            <div className="section grid-wrapper">                                
+                                <div className="col-4">
+                                    <div className="section-callout">
+                                        <h3 className="section-subheader" data-sal="slide-up" data-sal-duration="2000" data-sal-delay="800" data-sal-easing="ease-out-quart">HEALTH CARE ACQUISITION</h3>
+                                        <h1 className="section-header" data-sal="zoom-in" data-sal-duration="900" data-sal-delay="300" data-sal-easing="ease-out-quart">ABOUT US</h1>
+                                        <h3 className="section-subheader" data-sal="slide-down" data-sal-duration="2000" data-sal-delay="800" data-sal-easing="ease-out-quart">TRANSFORMATION</h3>
+                                    </div>
                                 </div>
-                                <div className="tile-home-half-section">
-                                    <h1>The Defense Healthcare Management System (DHMS) Program Executive Office (PEO) was chartered to transform the delivery of healthcare and advance data sharing through a modernized electronic health record (EHR) for service members, veterans, and their families.</h1>
-                                </div>
-                                <div className="tile-home-half-section">
-                                    <h1>The Defense Healthcare Management System (DHMS) Program Executive Office (PEO) was chartered to transform the delivery of healthcare and advance data sharing through a modernized electronic health record (EHR) for service members, veterans, and their families.</h1>
+                                <div className="col-8 section-content">
+                                    <p>The Defense Healthcare Management System (DHMS) Program Executive Office (PEO) was chartered to transform the delivery of healthcare and advance data sharing through a modernized electronic health record (EHR) for service members, veterans, and their families.</p>
                                 </div>
                             </div>
                         </article>
@@ -96,12 +95,15 @@ class HomeContent extends React.Component {
                                 </div>
                             </header>
                         </article>
-                        <div className="tile-support-container light-background">
-                            <div className="tile-support-text-column">
-                                <h1>PATIENT FOCUSED HEALTH CARE</h1>
-                                <h2>WHO WE</h2>
-                                <h3>SUPPORT</h3>
-                                <h4>HEALTHCARE MODERNIZATION</h4>
+                        <div className="light-background">
+                            <div className="grid-wrapper section">
+                                <div className="section-callout">
+                                    <h4 className="section-subheader">PATIENT FOCUSED HEALTHCARE</h4>
+                                    <h1 className="section-header">
+                                        WHO WE SUPPORT
+                                    </h1>
+                                    <h4 className="section-subheader">HEALTHCARE SYSTEM MODERNIZATION</h4>
+                                </div>
                             </div>
                             <div className="tile-support-link-column">
                                 <div className="support-link">
@@ -178,6 +180,13 @@ class HomeContent extends React.Component {
 export default () => {
     const data = useStaticQuery(graphql `
         query {
+            head: file(base: { eq: "head.jpg" }) {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+            }
             dhmsflag: file(base: { eq: "dhmsflag.jpg" }) {
                 childImageSharp {
                   fluid {

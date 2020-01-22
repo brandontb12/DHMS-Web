@@ -28,66 +28,45 @@
 		outline: 0;
 	}
 
-	#header {
+	#navHeader {
 		@include vendor('display', 'flex');
-		background-color: _palette(bg-alt);
+		background-color: transparentize($color: _palette(primary), $amount: .1);
 		box-shadow: 0 0 0.25em 0 rgba(0,0,0,0.15);
 		cursor: default;
 		font-weight: _font(weight-bold);
-		height: 8.2vh;
+		height: 15vh;
 		left: 0;
 		letter-spacing: _font(letter-spacing-alt);
-		line-height: 3.25em;
 		margin: 0;
 		position: fixed;
 		text-transform: uppercase;
 		top: 0;
 		width: 100%;
 		z-index: _misc(z-index-base);
-		border-bottom: .5vh solid white;
+		border-bottom: 2px solid white;
 
-		.logo {
-			border: 0;
-			display: inline-block;
-			font-size: 0.8em;
-			height: 2vh;
-			line-height: inherit;
-			padding: 0 1.5em;
-
-			strong {
-				@include vendor('transition', (
-					'background-color #{_duration(transition)} ease-in-out',
-					'color #{_duration(transition)} ease-in-out'
-				));
-				background-color: _palette(fg-bold);
-				color: _palette(bg);
-				display: inline-block;
-				line-height: 1.65em;
-				margin-right: 0.325em;
-				padding: 0 0.125em 0 (_font(letter-spacing-alt) + 0.125em);
+		.logo-wrap {
+			display: flexbox;
+			.logo-img {
+				height:98%;
+				margin:auto;
+				vertical-align: middle;
 			}
 
-			&:hover {
-				strong {
-					background-color: _palette(highlight);
-				}
-			}
-
-			&:active {
-				strong {
-					background-color: desaturate(darken(_palette(highlight), 15), 5);
-				}
+			.logo-subtext {
+				font-weight: lighter;
+				font-size:.8em;
+				line-height: .8em;
 			}
 		}
-
-		.pic-attributes {
-			height: 11.9vh;
-			width: 5vw;
-		}
-
 		.header {
 			font-size: 2vw;
-			font-weight: _font(weight-bold);
+			margin-bottom:0px;
+		}
+
+		.header-container {
+			margin-left:1vw;
+			line-height: 2vw;
 		}
 
 		@media(max-width: 780px) {
@@ -98,8 +77,9 @@
 		}
 
 		.subheader {
-			margin-left:1vw;
+			font-size: .8vw;
 			font-weight: _font(weight-lighter);
+			text-transform: none;
 		}
 
 		@media(max-width: 1080px) {
@@ -176,11 +156,11 @@
 			@include vendor('animation', 'reveal-header 0.35s ease');
 		}
 
-		&.alt {
+		&.header-top {
 			@include vendor('transition', 'opacity #{_duration(banner)} ease');
 			@include vendor('transition-delay', '0.75s');
 			@include vendor('animation', 'none');
-			background-color: transparent;
+			background-color: transparentize($color: black, $amount: .5);
 			box-shadow: none;
 			position: absolute;
 
@@ -193,7 +173,7 @@
 		}
 
 		.body.is-loading & {
-			&.alt {
+			&.header-top {
 				opacity: 0;
 			}
 		}

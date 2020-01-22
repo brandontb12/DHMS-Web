@@ -1,0 +1,41 @@
+.section-header
+{
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 700 !important;
+    color: _palette(primary) !important;
+    margin: .5em 0;
+    line-height: 1.2em;
+}
+
+.section-subheader
+{
+    font-family: 'Raleway', serif !important;
+    font-weight: 200 !important;
+    color: _palette(secondary) !important;
+    letter-spacing: normal !important;
+    width:70%;
+    margin:auto;
+    line-height: 1.2em;
+}
+
+.section {
+    margin-top:10%;
+
+}
+.section-callout
+{
+    text-align: center;
+    background-color: _palette(light-gray);
+    border-radius: 50%;
+    width: 25vw;
+    height: 25vw;
+    padding-top:5vw;
+    margin: 0 0 0 8vw;
+}
+
+.section-content
+{
+    color:black;
+    padding: 10px 20px;
+    font-size: 2em;
+}
