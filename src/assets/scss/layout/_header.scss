@@ -46,9 +46,8 @@
 		border-bottom: 2px solid white;
 
 		.logo-wrap {
-			display: flexbox;
 			.logo-img {
-				height:98%;
+				width:8vw;
 				margin:auto;
 				vertical-align: middle;
 			}
@@ -59,14 +58,17 @@
 				line-height: .8em;
 			}
 		}
-		.header {
-			font-size: 2vw;
-			margin-bottom:0px;
-		}
 
 		.header-container {
 			margin-left:1vw;
 			line-height: 2vw;
+			
+		}
+
+		.header {
+			font-size: 2vw;
+			font-family: _font(header);
+			margin-bottom:0px;
 		}
 
 		@media(max-width: 780px) {
@@ -77,8 +79,8 @@
 		}
 
 		.subheader {
-			font-size: .8vw;
-			font-weight: _font(weight-lighter);
+			font-size: 1vw;
+			font-weight: _font(weight-light);
 			text-transform: none;
 		}
 

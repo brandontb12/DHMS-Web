@@ -23,153 +23,110 @@ class HomeContent extends React.Component {
                     <html lang="en"/>
                 </Helmet>
                 <div id="main">
-                    <section id="one" className="tiles">
+                    <section id="one">
                         <div className="tile-home">
                             <Img fluid={this.props.data.head.childImageSharp.fluid} className="tile-home-pic"/>
-                            {/* <div className="tile-home-text light-background">
-                                <div className="org-row">
-                                    <div className="tile-home-half-section">
-                                        <h3>WHO ARE WE?</h3>
-                                        <h2>ABOUT</h2>
-                                        <h3>WHAT IS OUR GOAL?</h3>
-                                    </div>
-                                    <div className="tile-home-half-section">
-                                        <h1>The Defense Healthcare Management System (DHMS) Program Executive Office (PEO) was chartered to transform the delivery of healthcare and advance data sharing through a modernized electronic health record (EHR) for service members, veterans, and their families.</h1>
-                                    </div>
-                                    <div className="tile-home-half-section">
-                                        <h1>The Defense Healthcare Management System (DHMS) Program Executive Office (PEO) was chartered to transform the delivery of healthcare and advance data sharing through a modernized electronic health record (EHR) for service members, veterans, and their families.</h1>
-                                    </div>
-                                </div>
-                            </div> */}
                         </div>
-                        <article className="light-background">
-                            <div className="section grid-wrapper">                                
-                                <div className="col-4">
-                                    <div className="section-callout">
-                                        <h3 className="section-subheader" data-sal="slide-up" data-sal-duration="2000" data-sal-delay="800" data-sal-easing="ease-out-quart">HEALTH CARE ACQUISITION</h3>
-                                        <h1 className="section-header" data-sal="zoom-in" data-sal-duration="900" data-sal-delay="300" data-sal-easing="ease-out-quart">ABOUT US</h1>
-                                        <h3 className="section-subheader" data-sal="slide-down" data-sal-duration="2000" data-sal-delay="800" data-sal-easing="ease-out-quart">TRANSFORMATION</h3>
-                                    </div>
-                                </div>
-                                <div className="col-8 section-content">
-                                    <p>The Defense Healthcare Management System (DHMS) Program Executive Office (PEO) was chartered to transform the delivery of healthcare and advance data sharing through a modernized electronic health record (EHR) for service members, veterans, and their families.</p>
+                        <div className="section grid-wrapper light-background">                                
+                            <div className="col-4">
+                                <div className="section-callout left">
+                                    <h3 className="section-subheader" data-sal="slide-up" data-sal-duration="2000" data-sal-delay="800" data-sal-easing="ease-out-quart">HEALTH CARE ACQUISITION</h3>
+                                    <h1 className="section-header" data-sal="zoom-in" data-sal-duration="900" data-sal-delay="300" data-sal-easing="ease-out-quart">ABOUT US</h1>
+                                    <h3 className="section-subheader" data-sal="slide-down" data-sal-duration="2000" data-sal-delay="800" data-sal-easing="ease-out-quart">TRANSFORMATION</h3>
                                 </div>
                             </div>
-                        </article>
-                        <article className="tile-accent-2 tile-orgs light-background">
-                            <header className="orgs">
-                                <div className="org-row">
-                                    <Link to="/contracting" className="link primary" aria-label="Blog">
-                                        <div className="org-column">
+                            <div className="col-8 section-content">
+                                <p>The Defense Healthcare Management System (DHMS) Program Executive Office (PEO) was chartered to transform the delivery of healthcare and advance data sharing through a modernized electronic health record (EHR) for service members, veterans, and their families.</p>
+                            </div>
+                        </div>
+                        <div className="section grid-wrapper light-background">
+                            <div className="col-8">
+                                <div className="grid-wrapper">
+                                    <Link to="/contracting" className="link primary col-6" aria-label="Blog">
+                                        <div className="contracting-img">
                                             <Img fluid={this.props.data.contractdivision.childImageSharp.fluid} className="org-img"/>
                                             <h3>Contracting Division</h3>
                                         </div>
                                     </Link>
-                                    <Link to="/contracts" className="link primary" aria-label="Contracts">
-                                        <div className="org-column">
+                                    <Link to="/contracts" className="link primary col-6" aria-label="Contracts">
+                                        <div className="contracting-img">
                                             <Img fluid={this.props.data.overview.childImageSharp.fluid} className="org-img"/>
                                             <h3>Resources</h3>
                                         </div>
                                     </Link>
-                                    <div className="org-column-text">
-                                        <h1>FIND OUT MORE</h1>
-                                        <h2>CONNECT</h2>
-                                        <h5>WITH US</h5>
-                                        <h4>BECOME PART OF THE TEAM</h4>
-                                        <h5></h5>
-                                    </div>
                                 </div>
-                                <div className="org-row" style={{marginTop:"5vh"}}>
-                                    <Link to="/dhmsm" className="link primary" aria-label="Blog">
-                                        <div className="org-column">
+                                <div className="grid-wrapper ">
+                                    <Link to="/dhmsm" className="link primary col-6" aria-label="Blog">
+                                        <div className="contracting-img">
                                             <Img fluid={this.props.data.calendar.childImageSharp.fluid} className="org-img"/>
                                             <h3>Calendar</h3>
                                         </div>
                                     </Link>
-                                    <Link to="/blog_landing" className="link primary" aria-label="Opportunities">
-                                        <div className="org-column">
+                                    <Link to="/blog_landing" className="link primary col-6" aria-label="Opportunities">
+                                        <div className="contracting-img">
                                             <Img fluid={this.props.data.blog.childImageSharp.fluid} className="org-img"/>
                                             <h3>Blog</h3>
                                         </div>
                                     </Link>
                                 </div>
-                            </header>
-                        </article>
-                        <div className="light-background">
-                            <div className="grid-wrapper section">
-                                <div className="section-callout">
-                                    <h4 className="section-subheader">PATIENT FOCUSED HEALTHCARE</h4>
-                                    <h1 className="section-header">
-                                        WHO WE SUPPORT
-                                    </h1>
-                                    <h4 className="section-subheader">HEALTHCARE SYSTEM MODERNIZATION</h4>
+                            </div>
+                            <div className="col-4">
+                                <div className="section-callout right">
+                                    <h3 className="section-subheader" data-sal="slide-up" data-sal-duration="2000" data-sal-delay="800" data-sal-easing="ease-out-quart">FIND OUT MORE</h3>
+                                    <h1 className="section-header" data-sal="zoom-in" data-sal-duration="900" data-sal-delay="300" data-sal-easing="ease-out-quart">CONNECT WITH US</h1>
+                                    <h3 className="section-subheader" data-sal="slide-down" data-sal-duration="2000" data-sal-delay="800" data-sal-easing="ease-out-quart">BECOME PART OF THE TEAM</h3>
                                 </div>
                             </div>
-                            <div className="tile-support-link-column">
+                        </div>
+                        <div className="section grid-wrapper light-background">
+                            <div className="col-4">
+                                <div className="section-callout left">
+                                    <h3 className="section-subheader" data-sal="slide-up" data-sal-duration="2000" data-sal-delay="800" data-sal-easing="ease-out-quart">PATIENT FOCUSED HEALTHCARE</h3>
+                                    <h1 className="section-header" data-sal="zoom-in" data-sal-duration="900" data-sal-delay="300" data-sal-easing="ease-out-quart">WHO WE SUPPORT</h1>
+                                    <h3 className="section-subheader" data-sal="slide-down" data-sal-duration="2000" data-sal-delay="800" data-sal-easing="ease-out-quart">HEALTHCARE SYSTEM MODERNIZATION</h3>
+                                </div>
+                            </div>
+                            <div className="col-8">
                                 <div className="support-link">
                                     <Link to="/jomis" className="link primary" aria-label="jomis">
-                                        <BackgroundImage fluid={this.props.data.jomislogo.childImageSharp.fluid} className="support-link-image">
-                                            <h1 className="jomis-link-text">Joint Operational Medicine Information Systems Program Management Office</h1>
+                                        <BackgroundImage fluid={this.props.data.jomislogo.childImageSharp.fluid} className="support-img">
+                                            <h3 className="jomis-link-text">Joint Operational Medicine Information Systems Program Management Office</h3>
                                         </BackgroundImage>
                                     </Link>
                                 </div>
-                                <div className="support-link support-link-two">
+                                <div className="support-link">
                                     <Link to="/dhmsm" className="link primary" aria-label="jomis">
-                                        <BackgroundImage fluid={this.props.data.ship.childImageSharp.fluid} className="support-link-image">
-                                            <h1 className="jomis-link-text">DoD Healthcare Management System Modernization Program Management Office</h1>
+                                        <BackgroundImage fluid={this.props.data.ship.childImageSharp.fluid} className="support-img">
+                                            <h3 className="jomis-link-text">DoD Healthcare Management System Modernization Program Management Office</h3>
                                         </BackgroundImage>
                                     </Link>
                                 </div>
-                                <div className="support-link support-link-three">
+                                <div className="support-link">
                                     <Link to="/dhmsm" className="link primary" aria-label="jomis">
-                                        <BackgroundImage fluid={this.props.data.dhmsflag.childImageSharp.fluid} className="support-link-image">
-                                            <h1 className="jomis-link-text">Federal Electronic Health Record Modernization</h1>
+                                        <BackgroundImage fluid={this.props.data.dhmsflag.childImageSharp.fluid} className="support-img">
+                                            <h3 className="jomis-link-text">Federal Electronic Health Record Modernization</h3>
                                         </BackgroundImage>
                                     </Link>
                                 </div>
                             </div>
                         </div>
-                        <div className="tile-opportunity-container light-background">
-                            <div className="opportunity-row">
-                                <div className="opportunity-column">
-                                    <Img fluid={this.props.data.health.childImageSharp.fluid} className="org-img"/>
-                                    <h1>Women's Health</h1>
-                                    <h2>While women and men have many of the same health issues, women may be affected differently than men. In addition, there are some conditions which are unique to women. Familiarity with women's health issues, regualr screenings and prevention are keys to maintaining good health...</h2>
-                                </div>
-                                <div className="opportunity-column">
+                        <div className="section grid-wrapper light-background">
+                            <div className="col-4 section-content">
                                 <Img fluid={this.props.data.health.childImageSharp.fluid} className="org-img"/>
-                                    <h1>Women's Health</h1>
-                                    <h2>While women and men have many of the same health issues, women may be affected differently than men. In addition, there are some conditions which are unique to women. Familiarity with women's health issues, regualr screenings and prevention are keys to maintaining good health...</h2>
-                                </div>
-                                <div className="opportunity-text-column">
-                                    <h3>NEWS</h3>
-                                    <h4>STAY UP</h4>
-                                    <h5>TO DATE</h5>
-                                    <h6>OPPORTUNITIES</h6>
+                            </div>
+                            <div className="col-4 section-content">
+                                <p>Women's Health</p>
+                                <p>While women and men have many of the same health issues, women may be affected differently than men. In addition, there are some conditions which are unique to women. Familiarity with women's health issues, regualr screenings and prevention are keys to maintaining good health...</p>
+                            </div>
+                            <div className="col-4">
+                                <div className="section-callout right">
+                                    <h3 className="section-subheader" data-sal="slide-up" data-sal-duration="2000" data-sal-delay="800" data-sal-easing="ease-out-quart">NEWS</h3>
+                                    <h1 className="section-header" data-sal="zoom-in" data-sal-duration="900" data-sal-delay="300" data-sal-easing="ease-out-quart">STAY UP TO DATE</h1>
+                                    <h3 className="section-subheader" data-sal="slide-down" data-sal-duration="2000" data-sal-delay="800" data-sal-easing="ease-out-quart">OPPORTUNITIES</h3>
                                 </div>
                             </div>
                         </div>
                     </section>
-                    {/* <section id="two" className="tiles">
-                        <article className="tile-accent-2 tile-vids dark-background">
-                            <div className="vids">
-                                <div className="vid-row">
-                                    <div className="vid-column">
-                                        <h2>FTI Congressional SBIR Hearing</h2>
-                                        <video controls>
-                                            <source src={CongressVideo} type="video/webm"/>
-                                        </video>
-                                    </div>
-                                    <div className="vid-column">
-                                        <h2>FTI Overview</h2>
-                                        <video controls>
-                                            <source src={OverviewVideo} type="video/webm"/>
-                                        </video>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </section> */}
                 </div>
                 <Contact/>
             </Layout>
