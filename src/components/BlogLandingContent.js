@@ -15,9 +15,62 @@ class BlogLandingContent extends React.Component  {
                     <html lang="en"/>
                 </Helmet>
 
-                {/* <BannerLanding title="Blogs" /> */}
+                <div className="blog">
+                    <div className="blog-tag-line grid-wrapper">
+                        <div className="col-1"/>
+                        <div className="col-7">
+                            <h1 className="blog-tag-line-header">WELCOME TO THE DHMS BLOG</h1>
+                            <h2 className="blog-tag-line-subheader">LEARN MORE ABOUT US</h2>
+                        </div>
+                    </div>
+                    <div className="grid-wrapper">
+                        <div className="col-4">
+                            <div className="grid-wrapper">
+                                <div className="col-2"/>
+                                <div className="col-10">
+                                    <Img fluid={this.props.data.womenhealth.childImageSharp.fluid}/>
+                                    <h1 className="blog-column-header">Women's Health</h1>
+                                    <p className="blog-column-paragraph">
+                                        While women and men have many of the same health issues, women may be affected differently than men. In addition, there are some
+                                        conditions which are unique to women. Familiarity with women's health issues, regular screenings and prevention are keys to
+                                        maintaining good health.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-4">
+                            <div className="grid-wrapper">
+                                <div className="col-1"/>
+                                <div className="col-10">
+                                <Img fluid={this.props.data.totalfitness.childImageSharp.fluid}/>
+                                    <h1 className="blog-column-header">Total Force Fitness</h1>
+                                    <p className="blog-column-paragraph">
+                                        Fitness of mind, body, and spirit is inherently connected with military service. But the understanding of this relationship
+                                        is constantly evolving as our operational and family commitments change. For 2020, the Military Health System is focusing
+                                        on Total Force Fitness.
+                                    </p>
+                                </div>
+                                <div className="col-1"/>
+                            </div>
+                        </div>
+                        <div className="col-4">
+                            <div className="grid-wrapper">
+                                <div className="col-10">
+                                <Img fluid={this.props.data.globalhealth.childImageSharp.fluid}/>
+                                    <h1 className="blog-column-header">Global Health</h1>
+                                    <p className="blog-column-paragraph">
+                                        Health and Human Services Secretary Alex Azar describes the work of the international crew of the USNS Comfort as "near 
+                                        miraculous". He was aboard the U.S. Navy hospital ship during deployment to South America earlier this year and saw firsthand
+                                        the impact of forward deployed troops.
+                                    </p>
+                                </div>
+                                <div className="col-2"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <div id="main">
+                {/* <div id="main">
                     <section id="one" className="tiles">
                         <article className="tile-accent-2 tile-blog-tag dark-background">
                             <div className="blog-tag">
@@ -67,27 +120,7 @@ class BlogLandingContent extends React.Component  {
                             </div>
                         </article>
                     </section>
-                    {/* <section id="two" className="spotlights">
-                        {edges.map(({ node }) => (
-                            <section key={node.id}>
-                                <Link to="/generic" className="image">
-                                    <img src={node.frontmatter.picture.publicURL} alt="" />
-                                </Link>
-                                <div className="content">
-                                    <div className="inner">
-                                        <header className="major">
-                                            <h3>{node.frontmatter.title} - {node.frontmatter.date}</h3>
-                                        </header>
-                                        <p>{node.excerpt}</p>
-                                        <ul className="actions">
-                                            <li><Link to="/generic" className="button">Learn more</Link></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </section>
-                        ))}
-                    </section> */}
-                </div>
+                </div> */}
 
             </Layout>
         )

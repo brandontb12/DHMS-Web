@@ -1,0 +1,43 @@
+.blog {
+    background-color: white;
+
+    .blog-tag-line {
+        height: 25%;
+    }
+
+    .blog-tag-line-header {
+        font-family: 'Playfair Display', serif !important;
+        font-weight: 700 !important;
+        color: black;
+        margin: .5em 0;
+        line-height: 1.2em;
+        text-align: left;
+        font-size: 3vw;
+    }
+
+    .blog-tag-line-subheader {
+        font-family: 'Raleway', serif !important;
+        font-weight: 50 !important;
+        color: black;
+        letter-spacing: .2vw !important;
+        width:70%;
+        line-height: 1.2em;
+        text-align: left;
+        font-size: 2vw;
+    }
+
+    .blog-column-header {
+        font-family: 'Playfair Display', serif !important;
+        font-weight: 100 !important;
+        font-size: 2vw;
+        color: black;
+        margin: .5em 0;
+        line-height: 1.2em;
+    }
+
+    .blog-column-paragraph {
+        color:black;
+        font-size: 1.1vw;
+        font-weight: 50 !important;
+    }
+}
