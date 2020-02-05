@@ -2,13 +2,31 @@ import React from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
+import Tagline from '../components/Tagline';
 import Img from "gatsby-image";
 import BackgroundImage from 'gatsby-background-image';
 import Contact from './Contact';
 
 class HomeContent extends React.Component {
     constructor(props) {
-        super(props);
+        super(props)
+        this.state = {
+            timeout: false
+        }
+    }
+
+    componentDidMount () {
+        this.timeoutId = setTimeout(() => {
+            this.setState({loading: ''});
+        }, 100);
+        document.addEventListener('mousedown', this.handleClickOutside);
+      }
+    
+    componentWillUnmount () {
+        if (this.timeoutId) {
+            clearTimeout(this.timeoutId);
+        }
+        document.removeEventListener('mousedown', this.handleClickOutside);
     }
 
     render() {
@@ -26,6 +44,9 @@ class HomeContent extends React.Component {
                     <section id="one">
                         <div className="tile-home">
                             <Img fluid={this.props.data.head.childImageSharp.fluid} className="tile-home-pic"/>
+                        </div>
+                        <div className="dark-background">
+                            <Tagline/>
                         </div>
                         <div className="section grid-wrapper light-background">                                
                             <div className="col-4">

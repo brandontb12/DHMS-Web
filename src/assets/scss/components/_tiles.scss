@@ -6,6 +6,11 @@
 
 /* Tiles */
 
+	.dark-background {
+		background-color: black;
+		height: 75vh;
+	}
+
 	.tiles {
 		@include vendor('display', 'flex');
 		@include vendor('flex-wrap', 'wrap');

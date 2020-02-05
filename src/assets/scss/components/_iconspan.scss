@@ -1,0 +1,11 @@
+/* Iconspan */
+
+.iconspan {
+    @include icon;
+    border-bottom: none;
+    position: relative;
+
+    > .label {
+        display: none;
+    }
+}
