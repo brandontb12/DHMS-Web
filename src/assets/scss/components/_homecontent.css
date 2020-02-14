@@ -1,0 +1,73 @@
+#main {
+  background-color: white;
+}
+.section-header {
+  font-family: "Playfair Display", serif !important;
+  font-weight: 700 !important;
+  color: _palette(primary) !important;
+  margin: 0.5em 0;
+  line-height: 1.2em;
+}
+.section-subheader {
+  font-family: "Raleway", serif !important;
+  font-weight: 300 !important;
+  color: _palette(secondary) !important;
+  letter-spacing: normal !important;
+  width: 70%;
+  margin: auto;
+  line-height: 1.2em;
+}
+.section {
+  margin-top: 1vh;
+  background-color: white;
+  padding: 5vh 0 5vh 0;
+}
+.section.light-background {
+  color: black;
+}
+.section.dark-background {
+  color: white;
+}
+.section-callout {
+  text-align: center;
+  background-color: _palette(light-gray);
+  border-radius: 50%;
+  width: 25vw;
+  height: 25vw;
+  padding-top: 5vw;
+}
+.section-callout.left {
+  margin: 0 0 0 8vw;
+}
+.section-callout.right {
+  margin: 0 8vw 0 0;
+}
+.section-content {
+  color: black;
+  padding: 10px 20px;
+  font-weight: 400;
+}
+.contracting-img {
+  width: 85%;
+  margin: auto;
+}
+.support-img {
+  height: 15vh;
+  width: 50vw;
+  margin: 2vh auto;
+  padding: 0 0 0 1vw;
+}
+.support-img h3 {
+  color: white !important;
+}
+.org-img {
+  width: 30vw;
+}
+.light-background h3 {
+  color: black;
+}
+.intro-vid {
+  background-color: black;
+  text-align: center;
+  padding: 15vh 1vw 0 1vw;
+}

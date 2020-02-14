@@ -5,6 +5,8 @@ import Layout from '../components/layout';
 import Img from "gatsby-image";
 import BackgroundImage from 'gatsby-background-image';
 import Contact from './Contact';
+import introVid from '../assets/videos/intro.webm'
+import introGif from '../assets/images/intro.gif'
 
 class HomeContent extends React.Component {
     constructor(props) {
@@ -24,8 +26,12 @@ class HomeContent extends React.Component {
                 </Helmet>
                 <div id="main">
                     <section id="one">
-                        <div className="tile-home">
-                            <Img fluid={this.props.data.head.childImageSharp.fluid} className="tile-home-pic"/>
+                        <div className="intro-vid">
+                        {/* <video controls>
+                            <source src={introVid} type="video/webm" autoplay="true" muted="true" width="1500" />
+                        </video> */}
+                        {/* <Img fluid={this.props.data.intro.childImageSharp.fluid} className="org-img"/> */}
+                            <img src={introGif} />                 
                         </div>
                         <div className="section grid-wrapper light-background">                                
                             <div className="col-4">
@@ -36,7 +42,7 @@ class HomeContent extends React.Component {
                                 </div>
                             </div>
                             <div className="col-8 section-content">
-                                <br/>
+                                
                                 <p>The Defense Healthcare Management System (DHMS) Program Executive Office (PEO) was chartered to transform the delivery of healthcare and advance data sharing through a modernized electronic health record (EHR) for service members, veterans, and their families.</p>
                             </div>
                         </div>
@@ -138,6 +144,13 @@ class HomeContent extends React.Component {
 export default () => {
     const data = useStaticQuery(graphql `
         query {
+            intro: file(base: { eq: "intro.gif" }) {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+            }
             head: file(base: { eq: "head.jpg" }) {
                 childImageSharp {
                   fluid {

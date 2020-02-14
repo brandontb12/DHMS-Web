@@ -9,6 +9,7 @@ module.exports = {
   pathPrefix: process.env.BASEURL || '/',
   plugins: [
     'gatsby-plugin-react-helmet',
+    
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
