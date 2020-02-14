@@ -50,24 +50,6 @@
 		right: 0;
 	}
 
-/* Tagline */
-
-	#tagline .logo {
-		margin: 0 auto;
-	}
-
-	#tagline .content {
-		display: inline-block;
-	}
-
-	#tagline nav ul {
-		display: inline-block;
-	}
-
-		#tagline nav ul li {
-			display: inline-block;
-		}
-
 /* Banner */
 
 	#banner {
