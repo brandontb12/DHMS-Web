@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import { Navbar, Nav, NavItem, MenuItem} from 'react-bootstrap'
-import logo from "../assets/images/logo-white.png"
+import logo from "../assets/images/dhms-logo.png"
 
 class Header extends React.Component {
     constructor(props) {
@@ -16,14 +16,14 @@ class Header extends React.Component {
                 <div className="logo-wrap col-1">
                     <img className="logo-img" src={logo} alt="DHMS Logo"></img>
                 </div>
-                <div className="header-container col-5">
+                <div className="header-container col-4">
                     <Link target="_top" to="/">
                         <div className="header">DEFENSE HEALTH MANAGEMENT SYSTEMS</div> 
                         <div className="subheader">Program Executive Office</div>
                     </Link>
                 </div>
                 
-                <div className="nav-links col-6">
+                <div className="nav-links col-7">
                     <Link className="nav-tabs" to="/">Home</Link>
                     <Link className="nav-tabs" to="/landing">Landing</Link>
                     <Link className="nav-tabs" to="/generic">Generic</Link>

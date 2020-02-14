@@ -57,6 +57,7 @@ class HomeContent extends React.Component {
                                 </div>
                             </div>
                             <div className="col-8 section-content">
+                                <br/>
                                 <p>The Defense Healthcare Management System (DHMS) Program Executive Office (PEO) was chartered to transform the delivery of healthcare and advance data sharing through a modernized electronic health record (EHR) for service members, veterans, and their families.</p>
                             </div>
                         </div>
